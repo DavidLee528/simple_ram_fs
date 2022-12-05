@@ -1,0 +1,7 @@
+/home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build/CMakeFiles/edit_cache.dir
+/home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build/CMakeFiles/rebuild_cache.dir
+/home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build/src/CMakeFiles/ramfs.dir
+/home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build/src/CMakeFiles/edit_cache.dir
+/home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build/src/CMakeFiles/rebuild_cache.dir
+/home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build/test/CMakeFiles/edit_cache.dir
+/home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build/test/CMakeFiles/rebuild_cache.dir
