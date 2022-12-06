@@ -28,8 +28,14 @@ This is a simple in memory file system simulator.
     - balloc()
     - bfree()
   - Level 1: Block I/O Layer
-    - bread()
-    - bwrite()
+    - `class BlockIO: public VDisk` in file `block_io.hpp && block_io.cpp`
+      - bread()
+      - bwrite()
+  - Level 0: Abstract In-memory Disk Layer
+    - `class VDisk` in file `disk.hpp && disk.cpp`
+      - virtual_disk_create()
+      - virtual_disk_open()
+      - virtual_disk_close()
 
 ## 0x04 Usage
 
