@@ -3,6 +3,8 @@
 
 // #define NDEBUG
 
+#include <vector>
+
 namespace ramfs {
 
 /**
@@ -24,6 +26,12 @@ typedef uint64_t disk_size_t;
  * @brief Data type decribe the disk amount 
  */
 typedef uint8_t disk_amount_t; 
+
+
+typedef struct Block {
+    std::vector<ramfs::byte_t> bvec { }; 
+    Block() {}
+} block_t; 
 
 }
 

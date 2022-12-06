@@ -20,17 +20,17 @@ void VDisk::init_ramfs() {
     assert(std::get<0>(config) % 1024 == 0);                            // BLOCK_SIZE must be integral multiple of 1024
     assert(std::get<1>(config) % std::get<0>(config) == 0);             // DISK_SIZE must be integral multiple of BLOCK_SIZE
 
-    // allocate memory space for every disk
-    for (ramfs::disk_amount_t i = 0; i < std::get<2>(config); ++i) {
-        // std::vector<ramfs::byte_t> *new_disk = new std::vector<ramfs::byte_t>(std::get<1>(config)); 
-        // this->disk_array.push_back(new_disk); 
-        std::shared_ptr<ramfs::byte_t> new_disk = std::make_shared<ramfs::byte_t>(std::get<1>(config)); 
-        this->disk_array.push_back(new_disk); 
-    }
-
     this->block_size = std::get<0>(config); 
     this->disk_size = std::get<1>(config); 
     this->disk_amount = std::get<2>(config); 
+
+    // allocate memory space for every disk
+    for (ramfs::disk_amount_t i = 0; i < this->disk_amount; ++i) {
+        // std::shared_ptr<ramfs::byte_t> new_disk = std::make_shared<ramfs::byte_t>(ptr); 
+        std::shared_ptr<ramfs::byte_t> new_disk {new ramfs::byte_t[this->disk_size]}; 
+        memset(new_disk.get(), 0, this->disk_size); 
+        this->disk_array.push_back(new_disk); 
+    }
 }
 
 std::tuple<ramfs::block_size_t, ramfs::disk_size_t, ramfs::disk_amount_t> VDisk::get_config_from_file(const std::string &rpath) {

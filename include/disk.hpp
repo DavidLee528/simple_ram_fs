@@ -13,6 +13,7 @@
 #define _DISK_HPP_ 1
 
 #include <iostream>
+#include <cstring>
 #include <map>
 #include <filesystem>
 #include <memory>

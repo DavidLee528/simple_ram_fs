@@ -15,6 +15,7 @@
 #include <iostream>
 
 #include "disk.hpp"
+#include "definations.hpp"
 
 class BlockIO: public VDisk {
 
@@ -25,18 +26,20 @@ public:
      * 
      * @param block Index of the block to read from
      * @param buf Data buffer to be filled with content of block
+     * @param disk The number of disk
      * @return int -1 for error, 0 otherwise
      */
-    inline int bread(size_t block, void *buf); 
+    inline ramfs::block_t bread(ramfs::block_size_t block, ramfs::disk_amount_t disk = 0); 
 
     /**
      * @brief Write a block to disk
      * 
      * @param block Index of the block to write to
      * @param buf Data buffer to write in the block
+     * @param disk The number of disk
      * @return int -1 for error, 0 otherwise
      */
-    inline int bwrite(size_t block, const void *buf); 
+    inline int bwrite(ramfs::block_size_t block, const void *buf, ramfs::disk_amount_t disk = 0); 
 
 }; 
 
