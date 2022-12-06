@@ -21,6 +21,12 @@ void BlockManage::init() {
         *curr_dat = prototype_dat; 
         ++curr_dat; 
     }
+
+    // init directory
+    this->pt.put(
+        boost::property_tree::basic_ptree<std::string, std::vector<int>>::path_type{"$/root", '/'}, 
+        std::vector<int>{}
+    ); 
 }
 
 int BlockManage::balloc(size_t n) {
@@ -61,4 +67,35 @@ void BlockManage::bfree(size_t idx) {
         } while (curr_fat->next != -1 && ++curr_fat); 
         break; 
     }
+
+}
+
+void BlockManage::make_dir(const std::string &dirname, const std::string &path) {
+    this->pt.put(
+        boost::property_tree::basic_ptree<std::string, std::vector<int>>::path_type{path + '/' + dirname, '/'}, 
+        std::vector<int>{}
+    ); 
+}
+
+void BlockManage::log_file(const std::string &filename, const std::string &path) {
+    // Allocate disk for new file
+    int bd = this->balloc(2); 
+
+    // log filename -> block descriptor
+    this->filename_to_bd.insert(std::make_pair(filename, bd)); 
+
+    // Add file
+    this->pt.get_child(
+        boost::property_tree::basic_ptree<std::string, std::vector<int>>::path_type{path, '/'}
+    ).data().push_back(bd); 
+}
+
+void BlockManage::unlog_file(const std::string &filename, const std::string &path) {
+    std::vector<int> & data { this->pt.get_child(
+        boost::property_tree::basic_ptree<std::string, std::vector<int>>::path_type{path, '/'}
+    ).data() }; 
+
+    std::remove_if(data.begin(), data.end(), [this, filename](int val) { return val == this->filename_to_bd[filename]; }); 
+
+    this->filename_to_bd.erase(filename); 
 }

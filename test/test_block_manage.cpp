@@ -45,6 +45,10 @@ BOOST_AUTO_TEST_CASE(PassTest) {
         disk->bfree(bd3); 
         disk->bfree(bd1); 
 
+        disk->make_dir("wgssb", "$"); 
+        disk->log_file("wgssb.yes", "$/wgssb"); 
+        disk->unlog_file("wgssb.yes", "$/wgssb"); 
+
         std::cout << std::endl; 
 
     } catch(const std::exception& e) {

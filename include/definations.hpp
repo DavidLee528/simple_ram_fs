@@ -49,6 +49,13 @@ using dat_item_t = struct {
     int is_busy;            // 4B
 }__attribute__((packed));   // 64B in total
 
+/**
+ * @brief When this sign appear in |filename| on 
+ * a |dat_item_t| object, it means that |start_idx|
+ * points to a index of directory. 
+ */
+static const char *dir_flag { "<!*_<DIR>_*!>" }; 
+
 using data_block_t = struct {
     ramfs::byte_t data[4096];   // to be modify to dynamic
 }; 
