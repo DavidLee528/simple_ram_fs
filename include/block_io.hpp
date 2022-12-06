@@ -44,7 +44,7 @@ public:
      * @param disk The number of disk
      * @return int -1 for error, 0 otherwise
      */
-    inline int bwrite(size_t block, const void *buf, ramfs::disk_amount_t disk); 
+    void bwrite(size_t block, const void *buf, ramfs::disk_amount_t disk = 0); 
 
 }; 
 

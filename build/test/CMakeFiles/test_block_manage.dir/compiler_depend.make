@@ -3816,8 +3816,12 @@ test/CMakeFiles/test_block_manage.dir/test_block_manage.cpp.o: ../test/test_bloc
   /usr/local/include/boost/algorithm/string/erase.hpp \
   ../include/definations.hpp \
   ../include/disk.hpp \
+  ../include/block_io.hpp \
+  ../include/block_manage.hpp \
   ../include/block_io.hpp
 
+
+../include/block_manage.hpp:
 
 /usr/local/include/boost/mpl/aux_/msvc_type.hpp:
 
