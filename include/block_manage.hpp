@@ -7,7 +7,6 @@
 class BlockManage: public BlockIO {
 public:
     using BlockIO::BlockIO; 
-
 public:
 
     void init(); 

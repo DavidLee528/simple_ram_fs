@@ -130,6 +130,54 @@ ramfs/fast:
 	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ramfs.dir/build.make src/CMakeFiles/ramfs.dir/build
 .PHONY : ramfs/fast
 
+block_io.o: block_io.cpp.o
+.PHONY : block_io.o
+
+# target to build an object file
+block_io.cpp.o:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ramfs.dir/build.make src/CMakeFiles/ramfs.dir/block_io.cpp.o
+.PHONY : block_io.cpp.o
+
+block_io.i: block_io.cpp.i
+.PHONY : block_io.i
+
+# target to preprocess a source file
+block_io.cpp.i:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ramfs.dir/build.make src/CMakeFiles/ramfs.dir/block_io.cpp.i
+.PHONY : block_io.cpp.i
+
+block_io.s: block_io.cpp.s
+.PHONY : block_io.s
+
+# target to generate assembly for a file
+block_io.cpp.s:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ramfs.dir/build.make src/CMakeFiles/ramfs.dir/block_io.cpp.s
+.PHONY : block_io.cpp.s
+
+block_manage.o: block_manage.cpp.o
+.PHONY : block_manage.o
+
+# target to build an object file
+block_manage.cpp.o:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ramfs.dir/build.make src/CMakeFiles/ramfs.dir/block_manage.cpp.o
+.PHONY : block_manage.cpp.o
+
+block_manage.i: block_manage.cpp.i
+.PHONY : block_manage.i
+
+# target to preprocess a source file
+block_manage.cpp.i:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ramfs.dir/build.make src/CMakeFiles/ramfs.dir/block_manage.cpp.i
+.PHONY : block_manage.cpp.i
+
+block_manage.s: block_manage.cpp.s
+.PHONY : block_manage.s
+
+# target to generate assembly for a file
+block_manage.cpp.s:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ramfs.dir/build.make src/CMakeFiles/ramfs.dir/block_manage.cpp.s
+.PHONY : block_manage.cpp.s
+
 disk.o: disk.cpp.o
 .PHONY : disk.o
 
@@ -211,6 +259,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ramfs"
+	@echo "... block_io.o"
+	@echo "... block_io.i"
+	@echo "... block_io.s"
+	@echo "... block_manage.o"
+	@echo "... block_manage.i"
+	@echo "... block_manage.s"
 	@echo "... disk.o"
 	@echo "... disk.i"
 	@echo "... disk.s"

@@ -6,6 +6,7 @@ add_compile_options(-g)
 set(source_list 
     ${PROJECT_SOURCE_DIR}/src/disk.cpp
     ${PROJECT_SOURCE_DIR}/src/block_io.cpp
+    ${PROJECT_SOURCE_DIR}/src/block_manage.cpp
     ${PROJECT_SOURCE_DIR}/src/terminal_io.cpp
 )
 

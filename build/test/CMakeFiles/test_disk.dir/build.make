@@ -111,10 +111,24 @@ test/CMakeFiles/test_disk.dir/__/src/block_io.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_disk.dir/__/src/block_io.cpp.s"
 	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/block_io.cpp -o CMakeFiles/test_disk.dir/__/src/block_io.cpp.s
 
+test/CMakeFiles/test_disk.dir/__/src/block_manage.cpp.o: test/CMakeFiles/test_disk.dir/flags.make
+test/CMakeFiles/test_disk.dir/__/src/block_manage.cpp.o: ../src/block_manage.cpp
+test/CMakeFiles/test_disk.dir/__/src/block_manage.cpp.o: test/CMakeFiles/test_disk.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object test/CMakeFiles/test_disk.dir/__/src/block_manage.cpp.o"
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/test_disk.dir/__/src/block_manage.cpp.o -MF CMakeFiles/test_disk.dir/__/src/block_manage.cpp.o.d -o CMakeFiles/test_disk.dir/__/src/block_manage.cpp.o -c /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/block_manage.cpp
+
+test/CMakeFiles/test_disk.dir/__/src/block_manage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_disk.dir/__/src/block_manage.cpp.i"
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/block_manage.cpp > CMakeFiles/test_disk.dir/__/src/block_manage.cpp.i
+
+test/CMakeFiles/test_disk.dir/__/src/block_manage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_disk.dir/__/src/block_manage.cpp.s"
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/block_manage.cpp -o CMakeFiles/test_disk.dir/__/src/block_manage.cpp.s
+
 test/CMakeFiles/test_disk.dir/__/src/terminal_io.cpp.o: test/CMakeFiles/test_disk.dir/flags.make
 test/CMakeFiles/test_disk.dir/__/src/terminal_io.cpp.o: ../src/terminal_io.cpp
 test/CMakeFiles/test_disk.dir/__/src/terminal_io.cpp.o: test/CMakeFiles/test_disk.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object test/CMakeFiles/test_disk.dir/__/src/terminal_io.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object test/CMakeFiles/test_disk.dir/__/src/terminal_io.cpp.o"
 	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/test_disk.dir/__/src/terminal_io.cpp.o -MF CMakeFiles/test_disk.dir/__/src/terminal_io.cpp.o.d -o CMakeFiles/test_disk.dir/__/src/terminal_io.cpp.o -c /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/terminal_io.cpp
 
 test/CMakeFiles/test_disk.dir/__/src/terminal_io.cpp.i: cmake_force
@@ -130,6 +144,7 @@ test_disk_OBJECTS = \
 "CMakeFiles/test_disk.dir/test_disk.cpp.o" \
 "CMakeFiles/test_disk.dir/__/src/disk.cpp.o" \
 "CMakeFiles/test_disk.dir/__/src/block_io.cpp.o" \
+"CMakeFiles/test_disk.dir/__/src/block_manage.cpp.o" \
 "CMakeFiles/test_disk.dir/__/src/terminal_io.cpp.o"
 
 # External object files for target test_disk
@@ -138,6 +153,7 @@ test_disk_EXTERNAL_OBJECTS =
 test/test_disk: test/CMakeFiles/test_disk.dir/test_disk.cpp.o
 test/test_disk: test/CMakeFiles/test_disk.dir/__/src/disk.cpp.o
 test/test_disk: test/CMakeFiles/test_disk.dir/__/src/block_io.cpp.o
+test/test_disk: test/CMakeFiles/test_disk.dir/__/src/block_manage.cpp.o
 test/test_disk: test/CMakeFiles/test_disk.dir/__/src/terminal_io.cpp.o
 test/test_disk: test/CMakeFiles/test_disk.dir/build.make
 test/test_disk: /usr/local/lib/libboost_filesystem.so.1.80.0
@@ -145,7 +161,7 @@ test/test_disk: /usr/local/lib/libboost_system.so.1.80.0
 test/test_disk: /usr/local/lib/libboost_unit_test_framework.so.1.80.0
 test/test_disk: /usr/local/lib/libboost_atomic.so.1.80.0
 test/test_disk: test/CMakeFiles/test_disk.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable test_disk"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable test_disk"
 	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_disk.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

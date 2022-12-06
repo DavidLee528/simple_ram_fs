@@ -10,25 +10,21 @@ namespace ramfs {
 /**
  * @brief Describe a Byte
  */
-// typedef uint8_t byte_t; 
 using byte_t = uint8_t; 
 
 /**
  * @brief Data type decribe a block size (Byte)
  */
-// typedef uint16_t block_size_t; 
 using block_size_t = uint16_t; 
 
 /**
  * @brief Data type decribe a disk size (Byte)
  */
-// typedef uint64_t disk_size_t;
 using disk_size_t = uint64_t; 
 
 /**
  * @brief Data type decribe the disk amount 
  */
-// typedef uint8_t disk_amount_t; 
 using disk_amount_t = uint8_t; 
 
 /**
@@ -40,17 +36,17 @@ using fat_item_t = struct {
     int is_busy; 
     int next; 
     int reserve; 
-}; 
+}__attribute__((packed)); 
 
 /**
  * @brief Describe an item in Directory Allocation Table
- *        (16 Bytes)
+ *        (64 Bytes)
  */
 using dat_item_t = struct {
-    char filename[32]; 
-    int start_idx; 
-    uint16_t reserve; 
-}; 
+    char filename[56];  // 56B
+    int start_idx;      // 4B
+    int reserve;        // 4B
+}__attribute__((packed)); 
 
 using data_block_t = struct {
     ramfs::byte_t data[4096];   // to be modify to dynamic

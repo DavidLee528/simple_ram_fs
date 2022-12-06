@@ -222,6 +222,42 @@ __/src/block_io.cpp.s:
 	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_applications.dir/build.make test/CMakeFiles/test_applications.dir/__/src/block_io.cpp.s
 .PHONY : __/src/block_io.cpp.s
 
+__/src/block_manage.o: __/src/block_manage.cpp.o
+.PHONY : __/src/block_manage.o
+
+# target to build an object file
+__/src/block_manage.cpp.o:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_disk.dir/build.make test/CMakeFiles/test_disk.dir/__/src/block_manage.cpp.o
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_io.dir/build.make test/CMakeFiles/test_block_io.dir/__/src/block_manage.cpp.o
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_manage.dir/build.make test/CMakeFiles/test_block_manage.dir/__/src/block_manage.cpp.o
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_file_manage.dir/build.make test/CMakeFiles/test_file_manage.dir/__/src/block_manage.cpp.o
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_applications.dir/build.make test/CMakeFiles/test_applications.dir/__/src/block_manage.cpp.o
+.PHONY : __/src/block_manage.cpp.o
+
+__/src/block_manage.i: __/src/block_manage.cpp.i
+.PHONY : __/src/block_manage.i
+
+# target to preprocess a source file
+__/src/block_manage.cpp.i:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_disk.dir/build.make test/CMakeFiles/test_disk.dir/__/src/block_manage.cpp.i
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_io.dir/build.make test/CMakeFiles/test_block_io.dir/__/src/block_manage.cpp.i
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_manage.dir/build.make test/CMakeFiles/test_block_manage.dir/__/src/block_manage.cpp.i
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_file_manage.dir/build.make test/CMakeFiles/test_file_manage.dir/__/src/block_manage.cpp.i
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_applications.dir/build.make test/CMakeFiles/test_applications.dir/__/src/block_manage.cpp.i
+.PHONY : __/src/block_manage.cpp.i
+
+__/src/block_manage.s: __/src/block_manage.cpp.s
+.PHONY : __/src/block_manage.s
+
+# target to generate assembly for a file
+__/src/block_manage.cpp.s:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_disk.dir/build.make test/CMakeFiles/test_disk.dir/__/src/block_manage.cpp.s
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_io.dir/build.make test/CMakeFiles/test_block_io.dir/__/src/block_manage.cpp.s
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_manage.dir/build.make test/CMakeFiles/test_block_manage.dir/__/src/block_manage.cpp.s
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_file_manage.dir/build.make test/CMakeFiles/test_file_manage.dir/__/src/block_manage.cpp.s
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_applications.dir/build.make test/CMakeFiles/test_applications.dir/__/src/block_manage.cpp.s
+.PHONY : __/src/block_manage.cpp.s
+
 __/src/disk.o: __/src/disk.cpp.o
 .PHONY : __/src/disk.o
 
@@ -430,6 +466,9 @@ help:
 	@echo "... __/src/block_io.o"
 	@echo "... __/src/block_io.i"
 	@echo "... __/src/block_io.s"
+	@echo "... __/src/block_manage.o"
+	@echo "... __/src/block_manage.i"
+	@echo "... __/src/block_manage.s"
 	@echo "... __/src/disk.o"
 	@echo "... __/src/disk.i"
 	@echo "... __/src/disk.s"

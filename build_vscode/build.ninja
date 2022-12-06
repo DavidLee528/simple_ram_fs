@@ -91,6 +91,20 @@ build src/CMakeFiles/ramfs.dir/disk.cpp.o: CXX_COMPILER__ramfs_Debug /home/david
   OBJECT_DIR = src/CMakeFiles/ramfs.dir
   OBJECT_FILE_DIR = src/CMakeFiles/ramfs.dir
 
+build src/CMakeFiles/ramfs.dir/block_io.cpp.o: CXX_COMPILER__ramfs_Debug /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/block_io.cpp || cmake_object_order_depends_target_ramfs
+  DEP_FILE = src/CMakeFiles/ramfs.dir/block_io.cpp.o.d
+  FLAGS = -g -g
+  INCLUDES = -I/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/include
+  OBJECT_DIR = src/CMakeFiles/ramfs.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/ramfs.dir
+
+build src/CMakeFiles/ramfs.dir/block_manage.cpp.o: CXX_COMPILER__ramfs_Debug /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/block_manage.cpp || cmake_object_order_depends_target_ramfs
+  DEP_FILE = src/CMakeFiles/ramfs.dir/block_manage.cpp.o.d
+  FLAGS = -g -g
+  INCLUDES = -I/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/include
+  OBJECT_DIR = src/CMakeFiles/ramfs.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/ramfs.dir
+
 build src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: CXX_COMPILER__ramfs_Debug /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/terminal_io.cpp || cmake_object_order_depends_target_ramfs
   DEP_FILE = src/CMakeFiles/ramfs.dir/terminal_io.cpp.o.d
   FLAGS = -g -g
@@ -106,7 +120,7 @@ build src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: CXX_COMPILER__ramfs_Debug /hom
 #############################################
 # Link the executable src/ramfs
 
-build src/ramfs: CXX_EXECUTABLE_LINKER__ramfs_Debug src/CMakeFiles/ramfs.dir/ramfs.cpp.o src/CMakeFiles/ramfs.dir/disk.cpp.o src/CMakeFiles/ramfs.dir/terminal_io.cpp.o
+build src/ramfs: CXX_EXECUTABLE_LINKER__ramfs_Debug src/CMakeFiles/ramfs.dir/ramfs.cpp.o src/CMakeFiles/ramfs.dir/disk.cpp.o src/CMakeFiles/ramfs.dir/block_io.cpp.o src/CMakeFiles/ramfs.dir/block_manage.cpp.o src/CMakeFiles/ramfs.dir/terminal_io.cpp.o
   FLAGS = -g
   LINK_LIBRARIES = -Wl,-Bstatic  -lfmt  -Wl,-Bdynamic
   OBJECT_DIR = src/CMakeFiles/ramfs.dir
@@ -176,6 +190,14 @@ build test/CMakeFiles/test_disk.dir/__/src/block_io.cpp.o: CXX_COMPILER__test_di
   OBJECT_DIR = test/CMakeFiles/test_disk.dir
   OBJECT_FILE_DIR = test/CMakeFiles/test_disk.dir/__/src
 
+build test/CMakeFiles/test_disk.dir/__/src/block_manage.cpp.o: CXX_COMPILER__test_disk_Debug /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/block_manage.cpp || cmake_object_order_depends_target_test_disk
+  DEFINES = -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DBOOST_TEST_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_NO_LIB
+  DEP_FILE = test/CMakeFiles/test_disk.dir/__/src/block_manage.cpp.o.d
+  FLAGS = -g -g
+  INCLUDES = -I/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/include
+  OBJECT_DIR = test/CMakeFiles/test_disk.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/test_disk.dir/__/src
+
 build test/CMakeFiles/test_disk.dir/__/src/terminal_io.cpp.o: CXX_COMPILER__test_disk_Debug /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/terminal_io.cpp || cmake_object_order_depends_target_test_disk
   DEFINES = -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DBOOST_TEST_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_NO_LIB
   DEP_FILE = test/CMakeFiles/test_disk.dir/__/src/terminal_io.cpp.o.d
@@ -192,7 +214,7 @@ build test/CMakeFiles/test_disk.dir/__/src/terminal_io.cpp.o: CXX_COMPILER__test
 #############################################
 # Link the executable test/test_disk
 
-build test/test_disk: CXX_EXECUTABLE_LINKER__test_disk_Debug test/CMakeFiles/test_disk.dir/test_disk.cpp.o test/CMakeFiles/test_disk.dir/__/src/disk.cpp.o test/CMakeFiles/test_disk.dir/__/src/block_io.cpp.o test/CMakeFiles/test_disk.dir/__/src/terminal_io.cpp.o | /usr/local/lib/libboost_filesystem.so.1.80.0 /usr/local/lib/libboost_system.so.1.80.0 /usr/local/lib/libboost_unit_test_framework.so.1.80.0 /usr/local/lib/libboost_atomic.so.1.80.0
+build test/test_disk: CXX_EXECUTABLE_LINKER__test_disk_Debug test/CMakeFiles/test_disk.dir/test_disk.cpp.o test/CMakeFiles/test_disk.dir/__/src/disk.cpp.o test/CMakeFiles/test_disk.dir/__/src/block_io.cpp.o test/CMakeFiles/test_disk.dir/__/src/block_manage.cpp.o test/CMakeFiles/test_disk.dir/__/src/terminal_io.cpp.o | /usr/local/lib/libboost_filesystem.so.1.80.0 /usr/local/lib/libboost_system.so.1.80.0 /usr/local/lib/libboost_unit_test_framework.so.1.80.0 /usr/local/lib/libboost_atomic.so.1.80.0
   FLAGS = -g
   LINK_LIBRARIES = /usr/local/lib/libboost_filesystem.so.1.80.0  /usr/local/lib/libboost_system.so.1.80.0  /usr/local/lib/libboost_unit_test_framework.so.1.80.0  -Wl,-Bstatic  -lfmt  -Wl,-Bdynamic  /usr/local/lib/libboost_atomic.so.1.80.0
   OBJECT_DIR = test/CMakeFiles/test_disk.dir
@@ -234,6 +256,14 @@ build test/CMakeFiles/test_block_io.dir/__/src/block_io.cpp.o: CXX_COMPILER__tes
   OBJECT_DIR = test/CMakeFiles/test_block_io.dir
   OBJECT_FILE_DIR = test/CMakeFiles/test_block_io.dir/__/src
 
+build test/CMakeFiles/test_block_io.dir/__/src/block_manage.cpp.o: CXX_COMPILER__test_block_io_Debug /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/block_manage.cpp || cmake_object_order_depends_target_test_block_io
+  DEFINES = -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DBOOST_TEST_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_NO_LIB
+  DEP_FILE = test/CMakeFiles/test_block_io.dir/__/src/block_manage.cpp.o.d
+  FLAGS = -g -g
+  INCLUDES = -I/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/include
+  OBJECT_DIR = test/CMakeFiles/test_block_io.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/test_block_io.dir/__/src
+
 build test/CMakeFiles/test_block_io.dir/__/src/terminal_io.cpp.o: CXX_COMPILER__test_block_io_Debug /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/terminal_io.cpp || cmake_object_order_depends_target_test_block_io
   DEFINES = -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DBOOST_TEST_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_NO_LIB
   DEP_FILE = test/CMakeFiles/test_block_io.dir/__/src/terminal_io.cpp.o.d
@@ -250,7 +280,7 @@ build test/CMakeFiles/test_block_io.dir/__/src/terminal_io.cpp.o: CXX_COMPILER__
 #############################################
 # Link the executable test/test_block_io
 
-build test/test_block_io: CXX_EXECUTABLE_LINKER__test_block_io_Debug test/CMakeFiles/test_block_io.dir/test_block_io.cpp.o test/CMakeFiles/test_block_io.dir/__/src/disk.cpp.o test/CMakeFiles/test_block_io.dir/__/src/block_io.cpp.o test/CMakeFiles/test_block_io.dir/__/src/terminal_io.cpp.o | /usr/local/lib/libboost_filesystem.so.1.80.0 /usr/local/lib/libboost_system.so.1.80.0 /usr/local/lib/libboost_unit_test_framework.so.1.80.0 /usr/local/lib/libboost_atomic.so.1.80.0
+build test/test_block_io: CXX_EXECUTABLE_LINKER__test_block_io_Debug test/CMakeFiles/test_block_io.dir/test_block_io.cpp.o test/CMakeFiles/test_block_io.dir/__/src/disk.cpp.o test/CMakeFiles/test_block_io.dir/__/src/block_io.cpp.o test/CMakeFiles/test_block_io.dir/__/src/block_manage.cpp.o test/CMakeFiles/test_block_io.dir/__/src/terminal_io.cpp.o | /usr/local/lib/libboost_filesystem.so.1.80.0 /usr/local/lib/libboost_system.so.1.80.0 /usr/local/lib/libboost_unit_test_framework.so.1.80.0 /usr/local/lib/libboost_atomic.so.1.80.0
   FLAGS = -g
   LINK_LIBRARIES = /usr/local/lib/libboost_filesystem.so.1.80.0  /usr/local/lib/libboost_system.so.1.80.0  /usr/local/lib/libboost_unit_test_framework.so.1.80.0  -Wl,-Bstatic  -lfmt  -Wl,-Bdynamic  /usr/local/lib/libboost_atomic.so.1.80.0
   OBJECT_DIR = test/CMakeFiles/test_block_io.dir
@@ -292,6 +322,14 @@ build test/CMakeFiles/test_block_manage.dir/__/src/block_io.cpp.o: CXX_COMPILER_
   OBJECT_DIR = test/CMakeFiles/test_block_manage.dir
   OBJECT_FILE_DIR = test/CMakeFiles/test_block_manage.dir/__/src
 
+build test/CMakeFiles/test_block_manage.dir/__/src/block_manage.cpp.o: CXX_COMPILER__test_block_manage_Debug /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/block_manage.cpp || cmake_object_order_depends_target_test_block_manage
+  DEFINES = -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DBOOST_TEST_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_NO_LIB
+  DEP_FILE = test/CMakeFiles/test_block_manage.dir/__/src/block_manage.cpp.o.d
+  FLAGS = -g -g
+  INCLUDES = -I/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/include
+  OBJECT_DIR = test/CMakeFiles/test_block_manage.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/test_block_manage.dir/__/src
+
 build test/CMakeFiles/test_block_manage.dir/__/src/terminal_io.cpp.o: CXX_COMPILER__test_block_manage_Debug /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/terminal_io.cpp || cmake_object_order_depends_target_test_block_manage
   DEFINES = -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DBOOST_TEST_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_NO_LIB
   DEP_FILE = test/CMakeFiles/test_block_manage.dir/__/src/terminal_io.cpp.o.d
@@ -308,7 +346,7 @@ build test/CMakeFiles/test_block_manage.dir/__/src/terminal_io.cpp.o: CXX_COMPIL
 #############################################
 # Link the executable test/test_block_manage
 
-build test/test_block_manage: CXX_EXECUTABLE_LINKER__test_block_manage_Debug test/CMakeFiles/test_block_manage.dir/test_block_manage.cpp.o test/CMakeFiles/test_block_manage.dir/__/src/disk.cpp.o test/CMakeFiles/test_block_manage.dir/__/src/block_io.cpp.o test/CMakeFiles/test_block_manage.dir/__/src/terminal_io.cpp.o | /usr/local/lib/libboost_filesystem.so.1.80.0 /usr/local/lib/libboost_system.so.1.80.0 /usr/local/lib/libboost_unit_test_framework.so.1.80.0 /usr/local/lib/libboost_atomic.so.1.80.0
+build test/test_block_manage: CXX_EXECUTABLE_LINKER__test_block_manage_Debug test/CMakeFiles/test_block_manage.dir/test_block_manage.cpp.o test/CMakeFiles/test_block_manage.dir/__/src/disk.cpp.o test/CMakeFiles/test_block_manage.dir/__/src/block_io.cpp.o test/CMakeFiles/test_block_manage.dir/__/src/block_manage.cpp.o test/CMakeFiles/test_block_manage.dir/__/src/terminal_io.cpp.o | /usr/local/lib/libboost_filesystem.so.1.80.0 /usr/local/lib/libboost_system.so.1.80.0 /usr/local/lib/libboost_unit_test_framework.so.1.80.0 /usr/local/lib/libboost_atomic.so.1.80.0
   FLAGS = -g
   LINK_LIBRARIES = /usr/local/lib/libboost_filesystem.so.1.80.0  /usr/local/lib/libboost_system.so.1.80.0  /usr/local/lib/libboost_unit_test_framework.so.1.80.0  -Wl,-Bstatic  -lfmt  -Wl,-Bdynamic  /usr/local/lib/libboost_atomic.so.1.80.0
   OBJECT_DIR = test/CMakeFiles/test_block_manage.dir
@@ -350,6 +388,14 @@ build test/CMakeFiles/test_file_manage.dir/__/src/block_io.cpp.o: CXX_COMPILER__
   OBJECT_DIR = test/CMakeFiles/test_file_manage.dir
   OBJECT_FILE_DIR = test/CMakeFiles/test_file_manage.dir/__/src
 
+build test/CMakeFiles/test_file_manage.dir/__/src/block_manage.cpp.o: CXX_COMPILER__test_file_manage_Debug /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/block_manage.cpp || cmake_object_order_depends_target_test_file_manage
+  DEFINES = -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DBOOST_TEST_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_NO_LIB
+  DEP_FILE = test/CMakeFiles/test_file_manage.dir/__/src/block_manage.cpp.o.d
+  FLAGS = -g -g
+  INCLUDES = -I/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/include
+  OBJECT_DIR = test/CMakeFiles/test_file_manage.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/test_file_manage.dir/__/src
+
 build test/CMakeFiles/test_file_manage.dir/__/src/terminal_io.cpp.o: CXX_COMPILER__test_file_manage_Debug /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/terminal_io.cpp || cmake_object_order_depends_target_test_file_manage
   DEFINES = -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DBOOST_TEST_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_NO_LIB
   DEP_FILE = test/CMakeFiles/test_file_manage.dir/__/src/terminal_io.cpp.o.d
@@ -366,7 +412,7 @@ build test/CMakeFiles/test_file_manage.dir/__/src/terminal_io.cpp.o: CXX_COMPILE
 #############################################
 # Link the executable test/test_file_manage
 
-build test/test_file_manage: CXX_EXECUTABLE_LINKER__test_file_manage_Debug test/CMakeFiles/test_file_manage.dir/test_file_manage.cpp.o test/CMakeFiles/test_file_manage.dir/__/src/disk.cpp.o test/CMakeFiles/test_file_manage.dir/__/src/block_io.cpp.o test/CMakeFiles/test_file_manage.dir/__/src/terminal_io.cpp.o | /usr/local/lib/libboost_filesystem.so.1.80.0 /usr/local/lib/libboost_system.so.1.80.0 /usr/local/lib/libboost_unit_test_framework.so.1.80.0 /usr/local/lib/libboost_atomic.so.1.80.0
+build test/test_file_manage: CXX_EXECUTABLE_LINKER__test_file_manage_Debug test/CMakeFiles/test_file_manage.dir/test_file_manage.cpp.o test/CMakeFiles/test_file_manage.dir/__/src/disk.cpp.o test/CMakeFiles/test_file_manage.dir/__/src/block_io.cpp.o test/CMakeFiles/test_file_manage.dir/__/src/block_manage.cpp.o test/CMakeFiles/test_file_manage.dir/__/src/terminal_io.cpp.o | /usr/local/lib/libboost_filesystem.so.1.80.0 /usr/local/lib/libboost_system.so.1.80.0 /usr/local/lib/libboost_unit_test_framework.so.1.80.0 /usr/local/lib/libboost_atomic.so.1.80.0
   FLAGS = -g
   LINK_LIBRARIES = /usr/local/lib/libboost_filesystem.so.1.80.0  /usr/local/lib/libboost_system.so.1.80.0  /usr/local/lib/libboost_unit_test_framework.so.1.80.0  -Wl,-Bstatic  -lfmt  -Wl,-Bdynamic  /usr/local/lib/libboost_atomic.so.1.80.0
   OBJECT_DIR = test/CMakeFiles/test_file_manage.dir
@@ -408,6 +454,14 @@ build test/CMakeFiles/test_applications.dir/__/src/block_io.cpp.o: CXX_COMPILER_
   OBJECT_DIR = test/CMakeFiles/test_applications.dir
   OBJECT_FILE_DIR = test/CMakeFiles/test_applications.dir/__/src
 
+build test/CMakeFiles/test_applications.dir/__/src/block_manage.cpp.o: CXX_COMPILER__test_applications_Debug /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/block_manage.cpp || cmake_object_order_depends_target_test_applications
+  DEFINES = -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DBOOST_TEST_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_NO_LIB
+  DEP_FILE = test/CMakeFiles/test_applications.dir/__/src/block_manage.cpp.o.d
+  FLAGS = -g -g
+  INCLUDES = -I/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/include
+  OBJECT_DIR = test/CMakeFiles/test_applications.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/test_applications.dir/__/src
+
 build test/CMakeFiles/test_applications.dir/__/src/terminal_io.cpp.o: CXX_COMPILER__test_applications_Debug /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/terminal_io.cpp || cmake_object_order_depends_target_test_applications
   DEFINES = -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DBOOST_TEST_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_NO_LIB
   DEP_FILE = test/CMakeFiles/test_applications.dir/__/src/terminal_io.cpp.o.d
@@ -424,7 +478,7 @@ build test/CMakeFiles/test_applications.dir/__/src/terminal_io.cpp.o: CXX_COMPIL
 #############################################
 # Link the executable test/test_applications
 
-build test/test_applications: CXX_EXECUTABLE_LINKER__test_applications_Debug test/CMakeFiles/test_applications.dir/test_applications.cpp.o test/CMakeFiles/test_applications.dir/__/src/disk.cpp.o test/CMakeFiles/test_applications.dir/__/src/block_io.cpp.o test/CMakeFiles/test_applications.dir/__/src/terminal_io.cpp.o | /usr/local/lib/libboost_filesystem.so.1.80.0 /usr/local/lib/libboost_system.so.1.80.0 /usr/local/lib/libboost_unit_test_framework.so.1.80.0 /usr/local/lib/libboost_atomic.so.1.80.0
+build test/test_applications: CXX_EXECUTABLE_LINKER__test_applications_Debug test/CMakeFiles/test_applications.dir/test_applications.cpp.o test/CMakeFiles/test_applications.dir/__/src/disk.cpp.o test/CMakeFiles/test_applications.dir/__/src/block_io.cpp.o test/CMakeFiles/test_applications.dir/__/src/block_manage.cpp.o test/CMakeFiles/test_applications.dir/__/src/terminal_io.cpp.o | /usr/local/lib/libboost_filesystem.so.1.80.0 /usr/local/lib/libboost_system.so.1.80.0 /usr/local/lib/libboost_unit_test_framework.so.1.80.0 /usr/local/lib/libboost_atomic.so.1.80.0
   FLAGS = -g
   LINK_LIBRARIES = /usr/local/lib/libboost_filesystem.so.1.80.0  /usr/local/lib/libboost_system.so.1.80.0  /usr/local/lib/libboost_unit_test_framework.so.1.80.0  -Wl,-Bstatic  -lfmt  -Wl,-Bdynamic  /usr/local/lib/libboost_atomic.so.1.80.0
   OBJECT_DIR = test/CMakeFiles/test_applications.dir

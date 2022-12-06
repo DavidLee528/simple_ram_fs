@@ -97,10 +97,38 @@ src/CMakeFiles/ramfs.dir/disk.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ramfs.dir/disk.cpp.s"
 	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/disk.cpp -o CMakeFiles/ramfs.dir/disk.cpp.s
 
+src/CMakeFiles/ramfs.dir/block_io.cpp.o: src/CMakeFiles/ramfs.dir/flags.make
+src/CMakeFiles/ramfs.dir/block_io.cpp.o: ../src/block_io.cpp
+src/CMakeFiles/ramfs.dir/block_io.cpp.o: src/CMakeFiles/ramfs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/ramfs.dir/block_io.cpp.o"
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/ramfs.dir/block_io.cpp.o -MF CMakeFiles/ramfs.dir/block_io.cpp.o.d -o CMakeFiles/ramfs.dir/block_io.cpp.o -c /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/block_io.cpp
+
+src/CMakeFiles/ramfs.dir/block_io.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ramfs.dir/block_io.cpp.i"
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/block_io.cpp > CMakeFiles/ramfs.dir/block_io.cpp.i
+
+src/CMakeFiles/ramfs.dir/block_io.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ramfs.dir/block_io.cpp.s"
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/block_io.cpp -o CMakeFiles/ramfs.dir/block_io.cpp.s
+
+src/CMakeFiles/ramfs.dir/block_manage.cpp.o: src/CMakeFiles/ramfs.dir/flags.make
+src/CMakeFiles/ramfs.dir/block_manage.cpp.o: ../src/block_manage.cpp
+src/CMakeFiles/ramfs.dir/block_manage.cpp.o: src/CMakeFiles/ramfs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/ramfs.dir/block_manage.cpp.o"
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/ramfs.dir/block_manage.cpp.o -MF CMakeFiles/ramfs.dir/block_manage.cpp.o.d -o CMakeFiles/ramfs.dir/block_manage.cpp.o -c /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/block_manage.cpp
+
+src/CMakeFiles/ramfs.dir/block_manage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ramfs.dir/block_manage.cpp.i"
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/block_manage.cpp > CMakeFiles/ramfs.dir/block_manage.cpp.i
+
+src/CMakeFiles/ramfs.dir/block_manage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ramfs.dir/block_manage.cpp.s"
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/block_manage.cpp -o CMakeFiles/ramfs.dir/block_manage.cpp.s
+
 src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: src/CMakeFiles/ramfs.dir/flags.make
 src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: ../src/terminal_io.cpp
 src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: src/CMakeFiles/ramfs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/ramfs.dir/terminal_io.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/ramfs.dir/terminal_io.cpp.o"
 	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/ramfs.dir/terminal_io.cpp.o -MF CMakeFiles/ramfs.dir/terminal_io.cpp.o.d -o CMakeFiles/ramfs.dir/terminal_io.cpp.o -c /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/terminal_io.cpp
 
 src/CMakeFiles/ramfs.dir/terminal_io.cpp.i: cmake_force
@@ -115,6 +143,8 @@ src/CMakeFiles/ramfs.dir/terminal_io.cpp.s: cmake_force
 ramfs_OBJECTS = \
 "CMakeFiles/ramfs.dir/ramfs.cpp.o" \
 "CMakeFiles/ramfs.dir/disk.cpp.o" \
+"CMakeFiles/ramfs.dir/block_io.cpp.o" \
+"CMakeFiles/ramfs.dir/block_manage.cpp.o" \
 "CMakeFiles/ramfs.dir/terminal_io.cpp.o"
 
 # External object files for target ramfs
@@ -122,10 +152,12 @@ ramfs_EXTERNAL_OBJECTS =
 
 src/ramfs: src/CMakeFiles/ramfs.dir/ramfs.cpp.o
 src/ramfs: src/CMakeFiles/ramfs.dir/disk.cpp.o
+src/ramfs: src/CMakeFiles/ramfs.dir/block_io.cpp.o
+src/ramfs: src/CMakeFiles/ramfs.dir/block_manage.cpp.o
 src/ramfs: src/CMakeFiles/ramfs.dir/terminal_io.cpp.o
 src/ramfs: src/CMakeFiles/ramfs.dir/build.make
 src/ramfs: src/CMakeFiles/ramfs.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ramfs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ramfs"
 	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ramfs.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

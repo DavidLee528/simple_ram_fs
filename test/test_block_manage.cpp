@@ -17,10 +17,29 @@ BOOST_AUTO_TEST_CASE(PassTest) {
         /**
          * @brief Type check
          */
-        BOOST_CHECK_EQUAL(sizeof(ramfs::fat_item_t), sizeof(int) * 4); 
-        BOOST_CHECK_EQUAL(sizeof(ramfs::dat_item_t), sizeof(char) * 32 + sizeof(int) + sizeof(uint16_t)); 
+        BOOST_CHECK_EQUAL(sizeof(char), 1); 
+        BOOST_CHECK_EQUAL(sizeof(int), 4); 
+        BOOST_CHECK_EQUAL(sizeof(uint64_t), 8); 
+        BOOST_CHECK_EQUAL(sizeof(ramfs::fat_item_t), 16); 
+        BOOST_CHECK_EQUAL(sizeof(ramfs::dat_item_t), 64); 
 
+        /**
+         * @brief Check init()
+         *        - Initial FAT
+         *        - Initial DAT
+         */
+        disk->init(); 
 
+        
+
+        int bd1 = disk->balloc(3); 
+        int bd2 = disk->balloc(1); 
+        int bd3 = disk->balloc(4); 
+        disk->bfree(bd2); 
+        disk->bfree(bd3); 
+        disk->bfree(bd1); 
+
+        std::cout << std::endl; 
 
     } catch(const std::exception& e) {
         std::cerr << e.what() << '\n';

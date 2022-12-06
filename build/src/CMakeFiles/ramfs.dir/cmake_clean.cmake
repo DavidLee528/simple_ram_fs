@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/ramfs.dir/block_io.cpp.o"
+  "CMakeFiles/ramfs.dir/block_io.cpp.o.d"
+  "CMakeFiles/ramfs.dir/block_manage.cpp.o"
+  "CMakeFiles/ramfs.dir/block_manage.cpp.o.d"
   "CMakeFiles/ramfs.dir/disk.cpp.o"
   "CMakeFiles/ramfs.dir/disk.cpp.o.d"
   "CMakeFiles/ramfs.dir/ramfs.cpp.o"
