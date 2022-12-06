@@ -129,6 +129,71 @@ ramfs/fast:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/ramfs.dir/build.make src/CMakeFiles/ramfs.dir/build
 .PHONY : ramfs/fast
 
+#=============================================================================
+# Target rules for targets named test_disk
+
+# Build rule for target.
+test_disk: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_disk
+.PHONY : test_disk
+
+# fast build rule for target.
+test_disk/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_disk.dir/build.make test/CMakeFiles/test_disk.dir/build
+.PHONY : test_disk/fast
+
+#=============================================================================
+# Target rules for targets named test_block_io
+
+# Build rule for target.
+test_block_io: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_block_io
+.PHONY : test_block_io
+
+# fast build rule for target.
+test_block_io/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_io.dir/build.make test/CMakeFiles/test_block_io.dir/build
+.PHONY : test_block_io/fast
+
+#=============================================================================
+# Target rules for targets named test_block_manage
+
+# Build rule for target.
+test_block_manage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_block_manage
+.PHONY : test_block_manage
+
+# fast build rule for target.
+test_block_manage/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_manage.dir/build.make test/CMakeFiles/test_block_manage.dir/build
+.PHONY : test_block_manage/fast
+
+#=============================================================================
+# Target rules for targets named test_file_manage
+
+# Build rule for target.
+test_file_manage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_file_manage
+.PHONY : test_file_manage
+
+# fast build rule for target.
+test_file_manage/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_file_manage.dir/build.make test/CMakeFiles/test_file_manage.dir/build
+.PHONY : test_file_manage/fast
+
+#=============================================================================
+# Target rules for targets named test_applications
+
+# Build rule for target.
+test_applications: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_applications
+.PHONY : test_applications
+
+# fast build rule for target.
+test_applications/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_applications.dir/build.make test/CMakeFiles/test_applications.dir/build
+.PHONY : test_applications/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -138,6 +203,11 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ramfs"
+	@echo "... test_applications"
+	@echo "... test_block_io"
+	@echo "... test_block_manage"
+	@echo "... test_disk"
+	@echo "... test_file_manage"
 .PHONY : help
 
 

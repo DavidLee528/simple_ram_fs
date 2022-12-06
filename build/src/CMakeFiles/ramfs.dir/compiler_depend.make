@@ -220,6 +220,18 @@ src/CMakeFiles/ramfs.dir/disk.cpp.o: ../src/disk.cpp \
   /usr/local/include/c++/11.2.0/bits/refwrap.h \
   /usr/local/include/c++/11.2.0/bits/fs_dir.h \
   /usr/local/include/c++/11.2.0/bits/fs_ops.h \
+  /usr/local/include/c++/11.2.0/memory \
+  /usr/local/include/c++/11.2.0/bits/stl_uninitialized.h \
+  /usr/local/include/c++/11.2.0/bits/stl_tempbuf.h \
+  /usr/local/include/c++/11.2.0/bits/stl_raw_storage_iter.h \
+  /usr/local/include/c++/11.2.0/bits/align.h \
+  /usr/local/include/c++/11.2.0/bit \
+  /usr/local/include/c++/11.2.0/bits/shared_ptr_atomic.h \
+  /usr/local/include/c++/11.2.0/bits/atomic_base.h \
+  /usr/local/include/c++/11.2.0/bits/atomic_lockfree_defines.h \
+  /usr/local/include/c++/11.2.0/backward/auto_ptr.h \
+  /usr/local/include/c++/11.2.0/pstl/glue_memory_defs.h \
+  /usr/local/include/c++/11.2.0/pstl/execution_defs.h \
   /usr/local/include/c++/11.2.0/fstream \
   /usr/local/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/basic_file.h \
   /usr/local/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/c++io.h \
@@ -229,7 +241,6 @@ src/CMakeFiles/ramfs.dir/disk.cpp.o: ../src/disk.cpp \
   /usr/local/include/c++/11.2.0/bits/stl_algo.h \
   /usr/local/include/c++/11.2.0/bits/algorithmfwd.h \
   /usr/local/include/c++/11.2.0/bits/stl_heap.h \
-  /usr/local/include/c++/11.2.0/bits/stl_tempbuf.h \
   /usr/local/include/c++/11.2.0/bits/uniform_int_dist.h \
   /usr/local/include/c++/11.2.0/pstl/glue_algorithm_defs.h \
   /usr/local/include/c++/11.2.0/functional \
@@ -239,11 +250,9 @@ src/CMakeFiles/ramfs.dir/disk.cpp.o: ../src/disk.cpp \
   /usr/local/include/c++/11.2.0/bits/hashtable_policy.h \
   /usr/local/include/c++/11.2.0/bits/unordered_map.h \
   /usr/local/include/c++/11.2.0/vector \
-  /usr/local/include/c++/11.2.0/bits/stl_uninitialized.h \
   /usr/local/include/c++/11.2.0/bits/stl_vector.h \
   /usr/local/include/c++/11.2.0/bits/stl_bvector.h \
   /usr/local/include/c++/11.2.0/bits/vector.tcc \
-  /usr/local/include/c++/11.2.0/pstl/execution_defs.h \
   /usr/local/include/c++/11.2.0/cmath \
   /usr/include/math.h \
   /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -274,15 +283,6 @@ src/CMakeFiles/ramfs.dir/disk.cpp.o: ../src/disk.cpp \
   /usr/local/include/c++/11.2.0/iterator \
   /usr/local/include/c++/11.2.0/bits/stream_iterator.h \
   /usr/local/include/fmt/format.h \
-  /usr/local/include/c++/11.2.0/memory \
-  /usr/local/include/c++/11.2.0/bits/stl_raw_storage_iter.h \
-  /usr/local/include/c++/11.2.0/bits/align.h \
-  /usr/local/include/c++/11.2.0/bit \
-  /usr/local/include/c++/11.2.0/bits/shared_ptr_atomic.h \
-  /usr/local/include/c++/11.2.0/bits/atomic_base.h \
-  /usr/local/include/c++/11.2.0/bits/atomic_lockfree_defines.h \
-  /usr/local/include/c++/11.2.0/backward/auto_ptr.h \
-  /usr/local/include/c++/11.2.0/pstl/glue_memory_defs.h \
   /usr/local/include/fmt/core.h \
   /usr/local/include/c++/11.2.0/cstddef \
   /usr/local/include/fmt/color.h \
@@ -918,7 +918,8 @@ src/CMakeFiles/ramfs.dir/disk.cpp.o: ../src/disk.cpp \
   /usr/local/include/boost/algorithm/string/erase.hpp \
   ../include/definations.hpp \
   ../include/terminal_io.hpp \
-  ../include/disk.hpp
+  ../include/disk.hpp \
+  ../include/definations.hpp
 
 src/CMakeFiles/ramfs.dir/ramfs.cpp.o: ../src/ramfs.cpp \
   /usr/include/stdc-predef.h \
@@ -1139,6 +1140,18 @@ src/CMakeFiles/ramfs.dir/ramfs.cpp.o: ../src/ramfs.cpp \
   /usr/local/include/c++/11.2.0/bits/refwrap.h \
   /usr/local/include/c++/11.2.0/bits/fs_dir.h \
   /usr/local/include/c++/11.2.0/bits/fs_ops.h \
+  /usr/local/include/c++/11.2.0/memory \
+  /usr/local/include/c++/11.2.0/bits/stl_uninitialized.h \
+  /usr/local/include/c++/11.2.0/bits/stl_tempbuf.h \
+  /usr/local/include/c++/11.2.0/bits/stl_raw_storage_iter.h \
+  /usr/local/include/c++/11.2.0/bits/align.h \
+  /usr/local/include/c++/11.2.0/bit \
+  /usr/local/include/c++/11.2.0/bits/shared_ptr_atomic.h \
+  /usr/local/include/c++/11.2.0/bits/atomic_base.h \
+  /usr/local/include/c++/11.2.0/bits/atomic_lockfree_defines.h \
+  /usr/local/include/c++/11.2.0/backward/auto_ptr.h \
+  /usr/local/include/c++/11.2.0/pstl/glue_memory_defs.h \
+  /usr/local/include/c++/11.2.0/pstl/execution_defs.h \
   /usr/local/include/c++/11.2.0/fstream \
   /usr/local/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/basic_file.h \
   /usr/local/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/c++io.h \
@@ -1148,7 +1161,6 @@ src/CMakeFiles/ramfs.dir/ramfs.cpp.o: ../src/ramfs.cpp \
   /usr/local/include/c++/11.2.0/bits/stl_algo.h \
   /usr/local/include/c++/11.2.0/bits/algorithmfwd.h \
   /usr/local/include/c++/11.2.0/bits/stl_heap.h \
-  /usr/local/include/c++/11.2.0/bits/stl_tempbuf.h \
   /usr/local/include/c++/11.2.0/bits/uniform_int_dist.h \
   /usr/local/include/c++/11.2.0/pstl/glue_algorithm_defs.h \
   /usr/local/include/c++/11.2.0/functional \
@@ -1158,11 +1170,9 @@ src/CMakeFiles/ramfs.dir/ramfs.cpp.o: ../src/ramfs.cpp \
   /usr/local/include/c++/11.2.0/bits/hashtable_policy.h \
   /usr/local/include/c++/11.2.0/bits/unordered_map.h \
   /usr/local/include/c++/11.2.0/vector \
-  /usr/local/include/c++/11.2.0/bits/stl_uninitialized.h \
   /usr/local/include/c++/11.2.0/bits/stl_vector.h \
   /usr/local/include/c++/11.2.0/bits/stl_bvector.h \
   /usr/local/include/c++/11.2.0/bits/vector.tcc \
-  /usr/local/include/c++/11.2.0/pstl/execution_defs.h \
   /usr/local/include/c++/11.2.0/cmath \
   /usr/include/math.h \
   /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -1193,15 +1203,6 @@ src/CMakeFiles/ramfs.dir/ramfs.cpp.o: ../src/ramfs.cpp \
   /usr/local/include/c++/11.2.0/iterator \
   /usr/local/include/c++/11.2.0/bits/stream_iterator.h \
   /usr/local/include/fmt/format.h \
-  /usr/local/include/c++/11.2.0/memory \
-  /usr/local/include/c++/11.2.0/bits/stl_raw_storage_iter.h \
-  /usr/local/include/c++/11.2.0/bits/align.h \
-  /usr/local/include/c++/11.2.0/bit \
-  /usr/local/include/c++/11.2.0/bits/shared_ptr_atomic.h \
-  /usr/local/include/c++/11.2.0/bits/atomic_base.h \
-  /usr/local/include/c++/11.2.0/bits/atomic_lockfree_defines.h \
-  /usr/local/include/c++/11.2.0/backward/auto_ptr.h \
-  /usr/local/include/c++/11.2.0/pstl/glue_memory_defs.h \
   /usr/local/include/fmt/core.h \
   /usr/local/include/c++/11.2.0/cstddef \
   /usr/local/include/fmt/color.h \
@@ -3246,24 +3247,6 @@ src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: ../src/terminal_io.cpp \
 
 /usr/local/include/boost/mpl/lambda_fwd.hpp:
 
-/usr/local/include/boost/preprocessor/facilities/overload.hpp:
-
-/usr/local/include/c++/11.2.0/tr1/beta_function.tcc:
-
-/usr/local/include/boost/algorithm/string/detail/replace_storage.hpp:
-
-/usr/local/include/c++/11.2.0/tr1/gamma.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
-
-/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
-
-/usr/local/include/boost/preprocessor/list/detail/fold_left.hpp:
-
-/usr/local/include/boost/mpl/aux_/value_wknd.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
-
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 /usr/local/include/c++/11.2.0/bits/stl_bvector.h:
@@ -3278,6 +3261,10 @@ src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: ../src/terminal_io.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
+/usr/local/include/boost/algorithm/string/detail/replace_storage.hpp:
+
+/usr/local/include/c++/11.2.0/tr1/gamma.tcc:
+
 /usr/local/include/c++/11.2.0/pstl/glue_algorithm_defs.h:
 
 /usr/local/include/boost/predef/os/aix.h:
@@ -3291,6 +3278,26 @@ src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: ../src/terminal_io.cpp \
 /usr/local/include/fmt/chrono.h:
 
 /usr/local/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/c++io.h:
+
+/usr/local/include/boost/range/as_literal.hpp:
+
+/usr/include/locale.h:
+
+/usr/local/include/c++/11.2.0/bits/atomic_lockfree_defines.h:
+
+/usr/include/math.h:
+
+/usr/local/include/boost/bind/mem_fn_template.hpp:
+
+/usr/local/include/boost/preprocessor/list/fold_left.hpp:
+
+/usr/local/include/c++/11.2.0/bits/unique_ptr.h:
+
+/usr/include/assert.h:
+
+/usr/local/include/c++/11.2.0/memory:
+
+/usr/local/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/messages_members.h:
 
 /usr/local/include/boost/config/detail/cxx_composite.hpp:
 
@@ -3314,7 +3321,7 @@ src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: ../src/terminal_io.cpp \
 
 /usr/local/include/c++/11.2.0/iomanip:
 
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+/usr/local/include/c++/11.2.0/bits/allocator.h:
 
 /usr/local/include/c++/11.2.0/bits/shared_ptr_base.h:
 
@@ -3323,6 +3330,10 @@ src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: ../src/terminal_io.cpp \
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
 /usr/local/include/c++/11.2.0/bits/fs_path.h:
+
+/usr/local/include/boost/predef/compiler/comeau.h:
+
+/usr/local/include/c++/11.2.0/limits:
 
 /usr/local/include/c++/11.2.0/bits/cxxabi_init_exception.h:
 
@@ -3334,15 +3345,11 @@ src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: ../src/terminal_io.cpp \
 
 /usr/local/include/boost/config/detail/select_platform_config.hpp:
 
+/usr/local/include/c++/11.2.0/bits/atomic_base.h:
+
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
 /usr/local/include/boost/config/detail/posix_features.hpp:
-
-/usr/local/include/boost/mpl/aux_/preprocessed/gcc/bind_fwd.hpp:
-
-/usr/local/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/c++locale.h:
-
-/usr/local/include/c++/11.2.0/bits/stl_multimap.h:
 
 /usr/local/include/boost/mpl/has_xxx.hpp:
 
@@ -3387,6 +3394,12 @@ src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: ../src/terminal_io.cpp \
 /usr/local/include/boost/predef/library/c/zos.h:
 
 /usr/local/include/c++/11.2.0/bits/basic_ios.h:
+
+/usr/local/include/boost/utility.hpp:
+
+/usr/local/include/c++/11.2.0/backward/auto_ptr.h:
+
+/usr/local/include/boost/core/swap.hpp:
 
 /usr/local/include/boost/concept/detail/has_constraints.hpp:
 
@@ -3460,12 +3473,6 @@ src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: ../src/terminal_io.cpp \
 
 /usr/local/include/c++/11.2.0/ext/type_traits.h:
 
-/usr/local/include/boost/mpl/aux_/config/bind.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
-
-/usr/local/include/c++/11.2.0/bits/functexcept.h:
-
 /usr/local/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/ctype_inline.h:
 
 /usr/local/include/c++/11.2.0/ext/new_allocator.h:
@@ -3524,9 +3531,13 @@ src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: ../src/terminal_io.cpp \
 
 /usr/include/linux/falloc.h:
 
+/usr/local/include/c++/11.2.0/algorithm:
+
 /usr/local/include/c++/11.2.0/pstl/execution_defs.h:
 
-/usr/local/include/c++/11.2.0/algorithm:
+/usr/local/include/c++/11.2.0/bit:
+
+/usr/local/include/c++/11.2.0/tr1/legendre_function.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
@@ -3564,6 +3575,18 @@ src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: ../src/terminal_io.cpp \
 
 /usr/local/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h:
 
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/bind_fwd.hpp:
+
+/usr/local/include/c++/11.2.0/bits/stl_multimap.h:
+
+/usr/local/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/c++locale.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+
+/usr/local/include/boost/preprocessor/list/detail/fold_left.hpp:
+
+/usr/local/include/boost/mpl/aux_/value_wknd.hpp:
+
 /usr/local/include/boost/mpl/aux_/config/has_apply.hpp:
 
 /usr/local/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/gthr-default.h:
@@ -3577,10 +3600,6 @@ src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: ../src/terminal_io.cpp \
 /usr/local/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/cpu_defines.h:
 
 /usr/local/include/c++/11.2.0/bits/hashtable.h:
-
-/usr/local/include/c++/11.2.0/bits/specfun.h:
-
-/usr/local/include/c++/11.2.0/type_traits:
 
 /usr/include/stdlib.h:
 
@@ -3694,21 +3713,9 @@ src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: ../src/terminal_io.cpp \
 
 /usr/local/include/boost/predef/platform/windows_runtime.h:
 
-/usr/include/math.h:
+/usr/local/include/c++/11.2.0/bits/stl_raw_storage_iter.h:
 
-/usr/local/include/boost/range/as_literal.hpp:
-
-/usr/include/locale.h:
-
-/usr/local/include/c++/11.2.0/bits/atomic_lockfree_defines.h:
-
-/usr/local/include/boost/bind/mem_fn_template.hpp:
-
-/usr/local/include/boost/preprocessor/list/fold_left.hpp:
-
-/usr/local/include/c++/11.2.0/bits/unique_ptr.h:
-
-/usr/include/assert.h:
+/usr/local/include/boost/predef/compiler/metaware.h:
 
 /usr/local/include/c++/11.2.0/bits/concept_check.h:
 
@@ -3758,12 +3765,6 @@ src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: ../src/terminal_io.cpp \
 
 /usr/local/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/ctype_base.h:
 
-/usr/local/include/c++/11.2.0/bits/allocator.h:
-
-/usr/local/include/c++/11.2.0/limits:
-
-/usr/local/include/boost/predef/compiler/comeau.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
 /usr/local/include/boost/range/detail/str_types.hpp:
@@ -3799,6 +3800,8 @@ src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: ../src/terminal_io.cpp \
 /usr/local/include/boost/algorithm/string/find_format.hpp:
 
 /usr/include/stdint.h:
+
+/usr/local/include/c++/11.2.0/bits/align.h:
 
 /usr/local/include/boost/preprocessor/logical/bitand.hpp:
 
@@ -3863,10 +3866,6 @@ src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: ../src/terminal_io.cpp \
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 /usr/local/include/c++/11.2.0/locale:
-
-/usr/local/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/messages_members.h:
-
-/usr/local/include/c++/11.2.0/memory:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
@@ -3934,6 +3933,10 @@ src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: ../src/terminal_io.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
+/usr/local/include/c++/11.2.0/bits/functional_hash.h:
+
+/usr/local/include/c++/11.2.0/ext/numeric_traits.h:
+
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 /usr/include/pthread.h:
@@ -3994,8 +3997,6 @@ src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: ../src/terminal_io.cpp \
 
 /usr/local/include/boost/predef/hardware/simd/x86_amd/versions.h:
 
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
-
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/local/include/boost/iterator/iterator_categories.hpp:
@@ -4007,6 +4008,12 @@ src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: ../src/terminal_io.cpp \
 /usr/local/include/c++/11.2.0/bits/stl_tempbuf.h:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+
+/usr/local/include/c++/11.2.0/bits/functexcept.h:
+
+/usr/local/include/boost/mpl/aux_/config/bind.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
@@ -4046,11 +4053,21 @@ src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: ../src/terminal_io.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
-/usr/local/include/c++/11.2.0/ext/numeric_traits.h:
+/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
-/usr/local/include/c++/11.2.0/bits/functional_hash.h:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
-/usr/local/include/c++/11.2.0/bits/align.h:
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/usr/local/include/c++/11.2.0/type_traits:
+
+/usr/local/include/c++/11.2.0/bits/specfun.h:
+
+/usr/local/include/boost/preprocessor/facilities/overload.hpp:
+
+/usr/local/include/c++/11.2.0/tr1/beta_function.tcc:
 
 /usr/local/include/c++/11.2.0/tr1/bessel_function.tcc:
 
@@ -4059,10 +4076,6 @@ src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: ../src/terminal_io.cpp \
 /usr/local/include/c++/11.2.0/cctype:
 
 /usr/local/include/boost/predef/library/std/cxx.h:
-
-/usr/local/include/c++/11.2.0/tr1/legendre_function.tcc:
-
-/usr/local/include/c++/11.2.0/bit:
 
 /usr/local/include/c++/11.2.0/tr1/riemann_zeta.tcc:
 
@@ -4081,18 +4094,6 @@ src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: ../src/terminal_io.cpp \
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
 /usr/local/include/fmt/format.h:
-
-/usr/local/include/c++/11.2.0/bits/stl_raw_storage_iter.h:
-
-/usr/local/include/boost/predef/compiler/metaware.h:
-
-/usr/local/include/c++/11.2.0/bits/atomic_base.h:
-
-/usr/local/include/boost/utility.hpp:
-
-/usr/local/include/c++/11.2.0/backward/auto_ptr.h:
-
-/usr/local/include/boost/core/swap.hpp:
 
 /usr/local/include/c++/11.2.0/cstddef:
 
@@ -4512,9 +4513,9 @@ src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: ../src/terminal_io.cpp \
 
 /usr/local/include/boost/type_traits/intrinsics.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
-
 /usr/local/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/atomic_word.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
 /usr/local/include/boost/predef/os/bsd/free.h:
 

@@ -20,10 +20,16 @@ This is a simple in memory file system simulator.
 - There are following concepts for the ram disk
   - block
 - Architecture
-  - Level 3: Application Layer
+  - Level 4: Application Layer
     - ls / pwd
     - rm / rmdir -> bfree()
     - touch / mkdir -> balloc()
+  - Level 3: File Management Layer
+    - Create file
+    - Remove file
+    - Read file
+    - Write file
+    - Modifiy file
   - Level 2: Block Management Layer
     - balloc()
     - bfree()

@@ -96,7 +96,11 @@ src/clean: src/CMakeFiles/ramfs.dir/clean
 # Directory level rules for directory test
 
 # Recursive "all" directory target.
-test/all:
+test/all: test/CMakeFiles/test_disk.dir/all
+test/all: test/CMakeFiles/test_block_io.dir/all
+test/all: test/CMakeFiles/test_block_manage.dir/all
+test/all: test/CMakeFiles/test_file_manage.dir/all
+test/all: test/CMakeFiles/test_applications.dir/all
 .PHONY : test/all
 
 # Recursive "preinstall" directory target.
@@ -104,7 +108,11 @@ test/preinstall:
 .PHONY : test/preinstall
 
 # Recursive "clean" directory target.
-test/clean:
+test/clean: test/CMakeFiles/test_disk.dir/clean
+test/clean: test/CMakeFiles/test_block_io.dir/clean
+test/clean: test/CMakeFiles/test_block_manage.dir/clean
+test/clean: test/CMakeFiles/test_file_manage.dir/clean
+test/clean: test/CMakeFiles/test_applications.dir/clean
 .PHONY : test/clean
 
 #=============================================================================
@@ -132,6 +140,136 @@ ramfs: src/CMakeFiles/ramfs.dir/rule
 src/CMakeFiles/ramfs.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/ramfs.dir/build.make src/CMakeFiles/ramfs.dir/clean
 .PHONY : src/CMakeFiles/ramfs.dir/clean
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/test_disk.dir
+
+# All Build rule for target.
+test/CMakeFiles/test_disk.dir/all:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_disk.dir/build.make test/CMakeFiles/test_disk.dir/depend
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_disk.dir/build.make test/CMakeFiles/test_disk.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles --progress-num=20,21,22,23,24 "Built target test_disk"
+.PHONY : test/CMakeFiles/test_disk.dir/all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/test_disk.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_disk.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/test_disk.dir/rule
+
+# Convenience name for target.
+test_disk: test/CMakeFiles/test_disk.dir/rule
+.PHONY : test_disk
+
+# clean rule for target.
+test/CMakeFiles/test_disk.dir/clean:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_disk.dir/build.make test/CMakeFiles/test_disk.dir/clean
+.PHONY : test/CMakeFiles/test_disk.dir/clean
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/test_block_io.dir
+
+# All Build rule for target.
+test/CMakeFiles/test_block_io.dir/all:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_io.dir/build.make test/CMakeFiles/test_block_io.dir/depend
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_io.dir/build.make test/CMakeFiles/test_block_io.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles --progress-num=10,11,12,13,14 "Built target test_block_io"
+.PHONY : test/CMakeFiles/test_block_io.dir/all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/test_block_io.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_block_io.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/test_block_io.dir/rule
+
+# Convenience name for target.
+test_block_io: test/CMakeFiles/test_block_io.dir/rule
+.PHONY : test_block_io
+
+# clean rule for target.
+test/CMakeFiles/test_block_io.dir/clean:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_io.dir/build.make test/CMakeFiles/test_block_io.dir/clean
+.PHONY : test/CMakeFiles/test_block_io.dir/clean
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/test_block_manage.dir
+
+# All Build rule for target.
+test/CMakeFiles/test_block_manage.dir/all:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_manage.dir/build.make test/CMakeFiles/test_block_manage.dir/depend
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_manage.dir/build.make test/CMakeFiles/test_block_manage.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles --progress-num=15,16,17,18,19 "Built target test_block_manage"
+.PHONY : test/CMakeFiles/test_block_manage.dir/all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/test_block_manage.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_block_manage.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/test_block_manage.dir/rule
+
+# Convenience name for target.
+test_block_manage: test/CMakeFiles/test_block_manage.dir/rule
+.PHONY : test_block_manage
+
+# clean rule for target.
+test/CMakeFiles/test_block_manage.dir/clean:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_manage.dir/build.make test/CMakeFiles/test_block_manage.dir/clean
+.PHONY : test/CMakeFiles/test_block_manage.dir/clean
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/test_file_manage.dir
+
+# All Build rule for target.
+test/CMakeFiles/test_file_manage.dir/all:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_file_manage.dir/build.make test/CMakeFiles/test_file_manage.dir/depend
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_file_manage.dir/build.make test/CMakeFiles/test_file_manage.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles --progress-num=25,26,27,28,29 "Built target test_file_manage"
+.PHONY : test/CMakeFiles/test_file_manage.dir/all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/test_file_manage.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_file_manage.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/test_file_manage.dir/rule
+
+# Convenience name for target.
+test_file_manage: test/CMakeFiles/test_file_manage.dir/rule
+.PHONY : test_file_manage
+
+# clean rule for target.
+test/CMakeFiles/test_file_manage.dir/clean:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_file_manage.dir/build.make test/CMakeFiles/test_file_manage.dir/clean
+.PHONY : test/CMakeFiles/test_file_manage.dir/clean
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/test_applications.dir
+
+# All Build rule for target.
+test/CMakeFiles/test_applications.dir/all:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_applications.dir/build.make test/CMakeFiles/test_applications.dir/depend
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_applications.dir/build.make test/CMakeFiles/test_applications.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles --progress-num=5,6,7,8,9 "Built target test_applications"
+.PHONY : test/CMakeFiles/test_applications.dir/all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/test_applications.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_applications.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/test_applications.dir/rule
+
+# Convenience name for target.
+test_applications: test/CMakeFiles/test_applications.dir/rule
+.PHONY : test_applications
+
+# clean rule for target.
+test/CMakeFiles/test_applications.dir/clean:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_applications.dir/build.make test/CMakeFiles/test_applications.dir/clean
+.PHONY : test/CMakeFiles/test_applications.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

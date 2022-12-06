@@ -41,8 +41,8 @@ public:
  */
 public: 
     ramfs::block_size_t get_block_size() const { return this->block_size; }
-    ramfs::disk_size_t get_disk_size() const { return this->disk_array.at(0)->size(); }
-    ramfs::disk_size_t get_disk_amount() const { return this->disk_array.size();  }
+    ramfs::disk_size_t get_disk_size() const { return this->disk_size; }
+    ramfs::disk_size_t get_disk_amount() const { return this->disk_amount;   }
 
 public: 
     void init_ramfs(); 
@@ -51,7 +51,9 @@ public:
 
 private: 
     ramfs::block_size_t block_size {0}; 
-    std::vector<std::vector<char>*> disk_array {}; 
+    ramfs::disk_size_t disk_size {0}; 
+    ramfs::disk_amount_t disk_amount {0}; 
+    std::vector<std::shared_ptr<ramfs::byte_t>> disk_array {}; 
 
 }; 
 

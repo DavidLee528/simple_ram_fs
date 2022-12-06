@@ -8,10 +8,10 @@ VDisk::VDisk() {
 }
 
 VDisk::~VDisk() {
-    // free disk allocation
-    for (std::vector<std::vector<char>*>::iterator iter = this->disk_array.begin(); iter != this->disk_array.end(); ++iter) {
-        delete *iter; 
-    }
+    // free disk allocation - RAII - shared_pointer
+    // for (std::vector<std::shared_ptr<ramfs::byte_t>>::iterator iter = this->disk_array.begin(); iter != this->disk_array.end(); ++iter) {
+    //     delete *iter; 
+    // }
 }
 
 void VDisk::init_ramfs() {
@@ -22,12 +22,15 @@ void VDisk::init_ramfs() {
 
     // allocate memory space for every disk
     for (ramfs::disk_amount_t i = 0; i < std::get<2>(config); ++i) {
-        std::vector<char> *new_disk = new std::vector<char>(std::get<1>(config)); 
+        // std::vector<ramfs::byte_t> *new_disk = new std::vector<ramfs::byte_t>(std::get<1>(config)); 
+        // this->disk_array.push_back(new_disk); 
+        std::shared_ptr<ramfs::byte_t> new_disk = std::make_shared<ramfs::byte_t>(std::get<1>(config)); 
         this->disk_array.push_back(new_disk); 
-        auto net_disk = std::make_shared<ramfs::byte_t>(std::get<1>(config)); 
     }
 
     this->block_size = std::get<0>(config); 
+    this->disk_size = std::get<1>(config); 
+    this->disk_amount = std::get<2>(config); 
 }
 
 std::tuple<ramfs::block_size_t, ramfs::disk_size_t, ramfs::disk_amount_t> VDisk::get_config_from_file(const std::string &rpath) {
@@ -75,6 +78,7 @@ void VDisk::init_interactive_system() {
         if (op == "") continue; 
         else if (op == "help") print_help(); 
         else if (op == "sbi") print_system_basic_information(*this); 
+        else if (op == "pwd") print_current_work_directory(curr_path); 
         else print_undefined_command(op); 
     }
 }

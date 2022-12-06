@@ -116,6 +116,304 @@ depend:
 	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+test/CMakeFiles/test_disk.dir/rule:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_disk.dir/rule
+.PHONY : test/CMakeFiles/test_disk.dir/rule
+
+# Convenience name for target.
+test_disk: test/CMakeFiles/test_disk.dir/rule
+.PHONY : test_disk
+
+# fast build rule for target.
+test_disk/fast:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_disk.dir/build.make test/CMakeFiles/test_disk.dir/build
+.PHONY : test_disk/fast
+
+# Convenience name for target.
+test/CMakeFiles/test_block_io.dir/rule:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_block_io.dir/rule
+.PHONY : test/CMakeFiles/test_block_io.dir/rule
+
+# Convenience name for target.
+test_block_io: test/CMakeFiles/test_block_io.dir/rule
+.PHONY : test_block_io
+
+# fast build rule for target.
+test_block_io/fast:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_io.dir/build.make test/CMakeFiles/test_block_io.dir/build
+.PHONY : test_block_io/fast
+
+# Convenience name for target.
+test/CMakeFiles/test_block_manage.dir/rule:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_block_manage.dir/rule
+.PHONY : test/CMakeFiles/test_block_manage.dir/rule
+
+# Convenience name for target.
+test_block_manage: test/CMakeFiles/test_block_manage.dir/rule
+.PHONY : test_block_manage
+
+# fast build rule for target.
+test_block_manage/fast:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_manage.dir/build.make test/CMakeFiles/test_block_manage.dir/build
+.PHONY : test_block_manage/fast
+
+# Convenience name for target.
+test/CMakeFiles/test_file_manage.dir/rule:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_file_manage.dir/rule
+.PHONY : test/CMakeFiles/test_file_manage.dir/rule
+
+# Convenience name for target.
+test_file_manage: test/CMakeFiles/test_file_manage.dir/rule
+.PHONY : test_file_manage
+
+# fast build rule for target.
+test_file_manage/fast:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_file_manage.dir/build.make test/CMakeFiles/test_file_manage.dir/build
+.PHONY : test_file_manage/fast
+
+# Convenience name for target.
+test/CMakeFiles/test_applications.dir/rule:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_applications.dir/rule
+.PHONY : test/CMakeFiles/test_applications.dir/rule
+
+# Convenience name for target.
+test_applications: test/CMakeFiles/test_applications.dir/rule
+.PHONY : test_applications
+
+# fast build rule for target.
+test_applications/fast:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_applications.dir/build.make test/CMakeFiles/test_applications.dir/build
+.PHONY : test_applications/fast
+
+__/src/block_io.o: __/src/block_io.cpp.o
+.PHONY : __/src/block_io.o
+
+# target to build an object file
+__/src/block_io.cpp.o:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_disk.dir/build.make test/CMakeFiles/test_disk.dir/__/src/block_io.cpp.o
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_io.dir/build.make test/CMakeFiles/test_block_io.dir/__/src/block_io.cpp.o
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_manage.dir/build.make test/CMakeFiles/test_block_manage.dir/__/src/block_io.cpp.o
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_file_manage.dir/build.make test/CMakeFiles/test_file_manage.dir/__/src/block_io.cpp.o
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_applications.dir/build.make test/CMakeFiles/test_applications.dir/__/src/block_io.cpp.o
+.PHONY : __/src/block_io.cpp.o
+
+__/src/block_io.i: __/src/block_io.cpp.i
+.PHONY : __/src/block_io.i
+
+# target to preprocess a source file
+__/src/block_io.cpp.i:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_disk.dir/build.make test/CMakeFiles/test_disk.dir/__/src/block_io.cpp.i
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_io.dir/build.make test/CMakeFiles/test_block_io.dir/__/src/block_io.cpp.i
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_manage.dir/build.make test/CMakeFiles/test_block_manage.dir/__/src/block_io.cpp.i
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_file_manage.dir/build.make test/CMakeFiles/test_file_manage.dir/__/src/block_io.cpp.i
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_applications.dir/build.make test/CMakeFiles/test_applications.dir/__/src/block_io.cpp.i
+.PHONY : __/src/block_io.cpp.i
+
+__/src/block_io.s: __/src/block_io.cpp.s
+.PHONY : __/src/block_io.s
+
+# target to generate assembly for a file
+__/src/block_io.cpp.s:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_disk.dir/build.make test/CMakeFiles/test_disk.dir/__/src/block_io.cpp.s
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_io.dir/build.make test/CMakeFiles/test_block_io.dir/__/src/block_io.cpp.s
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_manage.dir/build.make test/CMakeFiles/test_block_manage.dir/__/src/block_io.cpp.s
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_file_manage.dir/build.make test/CMakeFiles/test_file_manage.dir/__/src/block_io.cpp.s
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_applications.dir/build.make test/CMakeFiles/test_applications.dir/__/src/block_io.cpp.s
+.PHONY : __/src/block_io.cpp.s
+
+__/src/disk.o: __/src/disk.cpp.o
+.PHONY : __/src/disk.o
+
+# target to build an object file
+__/src/disk.cpp.o:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_disk.dir/build.make test/CMakeFiles/test_disk.dir/__/src/disk.cpp.o
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_io.dir/build.make test/CMakeFiles/test_block_io.dir/__/src/disk.cpp.o
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_manage.dir/build.make test/CMakeFiles/test_block_manage.dir/__/src/disk.cpp.o
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_file_manage.dir/build.make test/CMakeFiles/test_file_manage.dir/__/src/disk.cpp.o
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_applications.dir/build.make test/CMakeFiles/test_applications.dir/__/src/disk.cpp.o
+.PHONY : __/src/disk.cpp.o
+
+__/src/disk.i: __/src/disk.cpp.i
+.PHONY : __/src/disk.i
+
+# target to preprocess a source file
+__/src/disk.cpp.i:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_disk.dir/build.make test/CMakeFiles/test_disk.dir/__/src/disk.cpp.i
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_io.dir/build.make test/CMakeFiles/test_block_io.dir/__/src/disk.cpp.i
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_manage.dir/build.make test/CMakeFiles/test_block_manage.dir/__/src/disk.cpp.i
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_file_manage.dir/build.make test/CMakeFiles/test_file_manage.dir/__/src/disk.cpp.i
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_applications.dir/build.make test/CMakeFiles/test_applications.dir/__/src/disk.cpp.i
+.PHONY : __/src/disk.cpp.i
+
+__/src/disk.s: __/src/disk.cpp.s
+.PHONY : __/src/disk.s
+
+# target to generate assembly for a file
+__/src/disk.cpp.s:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_disk.dir/build.make test/CMakeFiles/test_disk.dir/__/src/disk.cpp.s
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_io.dir/build.make test/CMakeFiles/test_block_io.dir/__/src/disk.cpp.s
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_manage.dir/build.make test/CMakeFiles/test_block_manage.dir/__/src/disk.cpp.s
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_file_manage.dir/build.make test/CMakeFiles/test_file_manage.dir/__/src/disk.cpp.s
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_applications.dir/build.make test/CMakeFiles/test_applications.dir/__/src/disk.cpp.s
+.PHONY : __/src/disk.cpp.s
+
+__/src/terminal_io.o: __/src/terminal_io.cpp.o
+.PHONY : __/src/terminal_io.o
+
+# target to build an object file
+__/src/terminal_io.cpp.o:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_disk.dir/build.make test/CMakeFiles/test_disk.dir/__/src/terminal_io.cpp.o
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_io.dir/build.make test/CMakeFiles/test_block_io.dir/__/src/terminal_io.cpp.o
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_manage.dir/build.make test/CMakeFiles/test_block_manage.dir/__/src/terminal_io.cpp.o
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_file_manage.dir/build.make test/CMakeFiles/test_file_manage.dir/__/src/terminal_io.cpp.o
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_applications.dir/build.make test/CMakeFiles/test_applications.dir/__/src/terminal_io.cpp.o
+.PHONY : __/src/terminal_io.cpp.o
+
+__/src/terminal_io.i: __/src/terminal_io.cpp.i
+.PHONY : __/src/terminal_io.i
+
+# target to preprocess a source file
+__/src/terminal_io.cpp.i:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_disk.dir/build.make test/CMakeFiles/test_disk.dir/__/src/terminal_io.cpp.i
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_io.dir/build.make test/CMakeFiles/test_block_io.dir/__/src/terminal_io.cpp.i
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_manage.dir/build.make test/CMakeFiles/test_block_manage.dir/__/src/terminal_io.cpp.i
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_file_manage.dir/build.make test/CMakeFiles/test_file_manage.dir/__/src/terminal_io.cpp.i
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_applications.dir/build.make test/CMakeFiles/test_applications.dir/__/src/terminal_io.cpp.i
+.PHONY : __/src/terminal_io.cpp.i
+
+__/src/terminal_io.s: __/src/terminal_io.cpp.s
+.PHONY : __/src/terminal_io.s
+
+# target to generate assembly for a file
+__/src/terminal_io.cpp.s:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_disk.dir/build.make test/CMakeFiles/test_disk.dir/__/src/terminal_io.cpp.s
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_io.dir/build.make test/CMakeFiles/test_block_io.dir/__/src/terminal_io.cpp.s
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_manage.dir/build.make test/CMakeFiles/test_block_manage.dir/__/src/terminal_io.cpp.s
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_file_manage.dir/build.make test/CMakeFiles/test_file_manage.dir/__/src/terminal_io.cpp.s
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_applications.dir/build.make test/CMakeFiles/test_applications.dir/__/src/terminal_io.cpp.s
+.PHONY : __/src/terminal_io.cpp.s
+
+test_applications.o: test_applications.cpp.o
+.PHONY : test_applications.o
+
+# target to build an object file
+test_applications.cpp.o:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_applications.dir/build.make test/CMakeFiles/test_applications.dir/test_applications.cpp.o
+.PHONY : test_applications.cpp.o
+
+test_applications.i: test_applications.cpp.i
+.PHONY : test_applications.i
+
+# target to preprocess a source file
+test_applications.cpp.i:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_applications.dir/build.make test/CMakeFiles/test_applications.dir/test_applications.cpp.i
+.PHONY : test_applications.cpp.i
+
+test_applications.s: test_applications.cpp.s
+.PHONY : test_applications.s
+
+# target to generate assembly for a file
+test_applications.cpp.s:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_applications.dir/build.make test/CMakeFiles/test_applications.dir/test_applications.cpp.s
+.PHONY : test_applications.cpp.s
+
+test_block_io.o: test_block_io.cpp.o
+.PHONY : test_block_io.o
+
+# target to build an object file
+test_block_io.cpp.o:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_io.dir/build.make test/CMakeFiles/test_block_io.dir/test_block_io.cpp.o
+.PHONY : test_block_io.cpp.o
+
+test_block_io.i: test_block_io.cpp.i
+.PHONY : test_block_io.i
+
+# target to preprocess a source file
+test_block_io.cpp.i:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_io.dir/build.make test/CMakeFiles/test_block_io.dir/test_block_io.cpp.i
+.PHONY : test_block_io.cpp.i
+
+test_block_io.s: test_block_io.cpp.s
+.PHONY : test_block_io.s
+
+# target to generate assembly for a file
+test_block_io.cpp.s:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_io.dir/build.make test/CMakeFiles/test_block_io.dir/test_block_io.cpp.s
+.PHONY : test_block_io.cpp.s
+
+test_block_manage.o: test_block_manage.cpp.o
+.PHONY : test_block_manage.o
+
+# target to build an object file
+test_block_manage.cpp.o:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_manage.dir/build.make test/CMakeFiles/test_block_manage.dir/test_block_manage.cpp.o
+.PHONY : test_block_manage.cpp.o
+
+test_block_manage.i: test_block_manage.cpp.i
+.PHONY : test_block_manage.i
+
+# target to preprocess a source file
+test_block_manage.cpp.i:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_manage.dir/build.make test/CMakeFiles/test_block_manage.dir/test_block_manage.cpp.i
+.PHONY : test_block_manage.cpp.i
+
+test_block_manage.s: test_block_manage.cpp.s
+.PHONY : test_block_manage.s
+
+# target to generate assembly for a file
+test_block_manage.cpp.s:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_manage.dir/build.make test/CMakeFiles/test_block_manage.dir/test_block_manage.cpp.s
+.PHONY : test_block_manage.cpp.s
+
+test_disk.o: test_disk.cpp.o
+.PHONY : test_disk.o
+
+# target to build an object file
+test_disk.cpp.o:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_disk.dir/build.make test/CMakeFiles/test_disk.dir/test_disk.cpp.o
+.PHONY : test_disk.cpp.o
+
+test_disk.i: test_disk.cpp.i
+.PHONY : test_disk.i
+
+# target to preprocess a source file
+test_disk.cpp.i:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_disk.dir/build.make test/CMakeFiles/test_disk.dir/test_disk.cpp.i
+.PHONY : test_disk.cpp.i
+
+test_disk.s: test_disk.cpp.s
+.PHONY : test_disk.s
+
+# target to generate assembly for a file
+test_disk.cpp.s:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_disk.dir/build.make test/CMakeFiles/test_disk.dir/test_disk.cpp.s
+.PHONY : test_disk.cpp.s
+
+test_file_manage.o: test_file_manage.cpp.o
+.PHONY : test_file_manage.o
+
+# target to build an object file
+test_file_manage.cpp.o:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_file_manage.dir/build.make test/CMakeFiles/test_file_manage.dir/test_file_manage.cpp.o
+.PHONY : test_file_manage.cpp.o
+
+test_file_manage.i: test_file_manage.cpp.i
+.PHONY : test_file_manage.i
+
+# target to preprocess a source file
+test_file_manage.cpp.i:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_file_manage.dir/build.make test/CMakeFiles/test_file_manage.dir/test_file_manage.cpp.i
+.PHONY : test_file_manage.cpp.i
+
+test_file_manage.s: test_file_manage.cpp.s
+.PHONY : test_file_manage.s
+
+# target to generate assembly for a file
+test_file_manage.cpp.s:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_file_manage.dir/build.make test/CMakeFiles/test_file_manage.dir/test_file_manage.cpp.s
+.PHONY : test_file_manage.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -124,6 +422,35 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test_applications"
+	@echo "... test_block_io"
+	@echo "... test_block_manage"
+	@echo "... test_disk"
+	@echo "... test_file_manage"
+	@echo "... __/src/block_io.o"
+	@echo "... __/src/block_io.i"
+	@echo "... __/src/block_io.s"
+	@echo "... __/src/disk.o"
+	@echo "... __/src/disk.i"
+	@echo "... __/src/disk.s"
+	@echo "... __/src/terminal_io.o"
+	@echo "... __/src/terminal_io.i"
+	@echo "... __/src/terminal_io.s"
+	@echo "... test_applications.o"
+	@echo "... test_applications.i"
+	@echo "... test_applications.s"
+	@echo "... test_block_io.o"
+	@echo "... test_block_io.i"
+	@echo "... test_block_io.s"
+	@echo "... test_block_manage.o"
+	@echo "... test_block_manage.i"
+	@echo "... test_block_manage.s"
+	@echo "... test_disk.o"
+	@echo "... test_disk.i"
+	@echo "... test_disk.s"
+	@echo "... test_file_manage.o"
+	@echo "... test_file_manage.i"
+	@echo "... test_file_manage.s"
 .PHONY : help
 
 
