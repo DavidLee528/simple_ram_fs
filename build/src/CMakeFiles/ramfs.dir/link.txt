@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/ramfs.dir/ramfs.cpp.o CMakeFiles/ramfs.dir/disk.cpp.o CMakeFiles/ramfs.dir/block_io.cpp.o CMakeFiles/ramfs.dir/block_manage.cpp.o CMakeFiles/ramfs.dir/terminal_io.cpp.o -o ramfs  -Wl,-Bstatic -lfmt -Wl,-Bdynamic 
+/usr/bin/c++ CMakeFiles/ramfs.dir/ramfs.cpp.o CMakeFiles/ramfs.dir/disk.cpp.o CMakeFiles/ramfs.dir/block_io.cpp.o CMakeFiles/ramfs.dir/block_manage.cpp.o CMakeFiles/ramfs.dir/file_manage.cpp.o CMakeFiles/ramfs.dir/terminal_io.cpp.o -o ramfs  -Wl,-Bstatic -lfmt -Wl,-Bdynamic 

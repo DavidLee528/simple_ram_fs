@@ -81,42 +81,42 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "ramfs::@145eef247bfb46b6828c",
-					"jsonFile" : "target-ramfs-Debug-a1a50c486dfba5a81ca7.json",
+					"jsonFile" : "target-ramfs-Debug-4176f5a521fa9162848a.json",
 					"name" : "ramfs",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "test_applications::@36f028580bb02cc8272a",
-					"jsonFile" : "target-test_applications-Debug-e29a408d1823f7a2c72a.json",
+					"jsonFile" : "target-test_applications-Debug-cc904dca5d302bcc7bff.json",
 					"name" : "test_applications",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "test_block_io::@36f028580bb02cc8272a",
-					"jsonFile" : "target-test_block_io-Debug-ebd26d0c2d2fd6a8822a.json",
+					"jsonFile" : "target-test_block_io-Debug-cdfe385a6078fc694c2c.json",
 					"name" : "test_block_io",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "test_block_manage::@36f028580bb02cc8272a",
-					"jsonFile" : "target-test_block_manage-Debug-4a8c5334cfe5c17ed66c.json",
+					"jsonFile" : "target-test_block_manage-Debug-1a09c9347b2aa2272e54.json",
 					"name" : "test_block_manage",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "test_disk::@36f028580bb02cc8272a",
-					"jsonFile" : "target-test_disk-Debug-a877189495585b70a41a.json",
+					"jsonFile" : "target-test_disk-Debug-4f3e85dd558ae5ebad97.json",
 					"name" : "test_disk",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "test_file_manage::@36f028580bb02cc8272a",
-					"jsonFile" : "target-test_file_manage-Debug-fe3517f91f6b9eae4b69.json",
+					"jsonFile" : "target-test_file_manage-Debug-9acc035091b9ff309c54.json",
 					"name" : "test_file_manage",
 					"projectIndex" : 0
 				}

@@ -32,25 +32,31 @@ using disk_amount_t = uint8_t;
  *        (16 Bytes)
  */
 using fat_item_t = struct {
-    int idx; 
-    int is_busy; 
-    int next; 
-    int reserve; 
-}__attribute__((packed)); 
+    int idx;                // 4B
+    int is_busy;            // 4B
+    int next;               // 4B
+    int reserve;            // 4B
+}__attribute__((packed));   // 16B in total
 
 /**
  * @brief Describe an item in Directory Allocation Table
  *        (64 Bytes)
  */
 using dat_item_t = struct {
-    char filename[56];  // 56B
-    int start_idx;      // 4B
-    int reserve;        // 4B
-}__attribute__((packed)); 
+    int idx;                // 4B
+    char filename[52];      // 52B
+    int start_idx;          // 4B
+    int is_busy;            // 4B
+}__attribute__((packed));   // 64B in total
 
 using data_block_t = struct {
     ramfs::byte_t data[4096];   // to be modify to dynamic
 }; 
+
+/**
+ * @brief Use the size when make new files (2 blocks)
+ */
+static const size_t file_init_size    { 8192UL };    // Bytes
 
 /**
  * @brief Index of first byte in each section 

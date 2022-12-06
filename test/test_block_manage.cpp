@@ -31,10 +31,16 @@ BOOST_AUTO_TEST_CASE(PassTest) {
         disk->init(); 
 
         
-
+        /**
+         * @brief Test block allocate
+         */
         int bd1 = disk->balloc(3); 
         int bd2 = disk->balloc(1); 
         int bd3 = disk->balloc(4); 
+
+        /**
+         * @brief Test block free
+         */
         disk->bfree(bd2); 
         disk->bfree(bd3); 
         disk->bfree(bd1); 

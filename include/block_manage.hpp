@@ -9,6 +9,9 @@ public:
     using BlockIO::BlockIO; 
 public:
 
+    /**
+     * @brief Initial FAT and DAT with prototype variable
+     */
     void init(); 
 
     /**
@@ -25,6 +28,9 @@ public:
      * @param idx the block index has been allocated
      */
     void bfree(size_t idx); 
+
+
+    void log_file(const std::string &filename, const std::string &path); 
 }; 
 
 #endif /* _BLOCK_MANAGE_HPP_ */

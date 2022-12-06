@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/test_block_io.dir/__/src/block_manage.cpp.o.d"
   "CMakeFiles/test_block_io.dir/__/src/disk.cpp.o"
   "CMakeFiles/test_block_io.dir/__/src/disk.cpp.o.d"
+  "CMakeFiles/test_block_io.dir/__/src/file_manage.cpp.o"
+  "CMakeFiles/test_block_io.dir/__/src/file_manage.cpp.o.d"
   "CMakeFiles/test_block_io.dir/__/src/terminal_io.cpp.o"
   "CMakeFiles/test_block_io.dir/__/src/terminal_io.cpp.o.d"
   "CMakeFiles/test_block_io.dir/test_block_io.cpp.o"

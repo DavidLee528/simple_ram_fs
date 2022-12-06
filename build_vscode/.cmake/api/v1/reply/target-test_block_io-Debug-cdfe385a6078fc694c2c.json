@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "test/test_disk"
+			"path" : "test/test_block_io"
 		}
 	],
 	"backtrace" : 1,
@@ -29,13 +29,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 13,
+				"line" : 15,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 19,
+				"line" : 26,
 				"parent" : 0
 			},
 			{
@@ -127,11 +127,12 @@
 				1,
 				2,
 				3,
-				4
+				4,
+				5
 			]
 		}
 	],
-	"id" : "test_disk::@36f028580bb02cc8272a",
+	"id" : "test_block_io::@36f028580bb02cc8272a",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -179,8 +180,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "test_disk",
-	"nameOnDisk" : "test_disk",
+	"name" : "test_block_io",
+	"nameOnDisk" : "test_block_io",
 	"paths" : 
 	{
 		"build" : "test",
@@ -196,7 +197,8 @@
 				1,
 				2,
 				3,
-				4
+				4,
+				5
 			]
 		}
 	],
@@ -205,7 +207,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "test/test_disk.cpp",
+			"path" : "test/test_block_io.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -224,6 +226,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/block_manage.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/file_manage.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

@@ -202,6 +202,30 @@ disk.cpp.s:
 	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ramfs.dir/build.make src/CMakeFiles/ramfs.dir/disk.cpp.s
 .PHONY : disk.cpp.s
 
+file_manage.o: file_manage.cpp.o
+.PHONY : file_manage.o
+
+# target to build an object file
+file_manage.cpp.o:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ramfs.dir/build.make src/CMakeFiles/ramfs.dir/file_manage.cpp.o
+.PHONY : file_manage.cpp.o
+
+file_manage.i: file_manage.cpp.i
+.PHONY : file_manage.i
+
+# target to preprocess a source file
+file_manage.cpp.i:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ramfs.dir/build.make src/CMakeFiles/ramfs.dir/file_manage.cpp.i
+.PHONY : file_manage.cpp.i
+
+file_manage.s: file_manage.cpp.s
+.PHONY : file_manage.s
+
+# target to generate assembly for a file
+file_manage.cpp.s:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ramfs.dir/build.make src/CMakeFiles/ramfs.dir/file_manage.cpp.s
+.PHONY : file_manage.cpp.s
+
 ramfs.o: ramfs.cpp.o
 .PHONY : ramfs.o
 
@@ -268,6 +292,9 @@ help:
 	@echo "... disk.o"
 	@echo "... disk.i"
 	@echo "... disk.s"
+	@echo "... file_manage.o"
+	@echo "... file_manage.i"
+	@echo "... file_manage.s"
 	@echo "... ramfs.o"
 	@echo "... ramfs.i"
 	@echo "... ramfs.s"

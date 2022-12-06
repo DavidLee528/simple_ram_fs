@@ -294,6 +294,42 @@ __/src/disk.cpp.s:
 	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_applications.dir/build.make test/CMakeFiles/test_applications.dir/__/src/disk.cpp.s
 .PHONY : __/src/disk.cpp.s
 
+__/src/file_manage.o: __/src/file_manage.cpp.o
+.PHONY : __/src/file_manage.o
+
+# target to build an object file
+__/src/file_manage.cpp.o:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_disk.dir/build.make test/CMakeFiles/test_disk.dir/__/src/file_manage.cpp.o
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_io.dir/build.make test/CMakeFiles/test_block_io.dir/__/src/file_manage.cpp.o
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_manage.dir/build.make test/CMakeFiles/test_block_manage.dir/__/src/file_manage.cpp.o
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_file_manage.dir/build.make test/CMakeFiles/test_file_manage.dir/__/src/file_manage.cpp.o
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_applications.dir/build.make test/CMakeFiles/test_applications.dir/__/src/file_manage.cpp.o
+.PHONY : __/src/file_manage.cpp.o
+
+__/src/file_manage.i: __/src/file_manage.cpp.i
+.PHONY : __/src/file_manage.i
+
+# target to preprocess a source file
+__/src/file_manage.cpp.i:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_disk.dir/build.make test/CMakeFiles/test_disk.dir/__/src/file_manage.cpp.i
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_io.dir/build.make test/CMakeFiles/test_block_io.dir/__/src/file_manage.cpp.i
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_manage.dir/build.make test/CMakeFiles/test_block_manage.dir/__/src/file_manage.cpp.i
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_file_manage.dir/build.make test/CMakeFiles/test_file_manage.dir/__/src/file_manage.cpp.i
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_applications.dir/build.make test/CMakeFiles/test_applications.dir/__/src/file_manage.cpp.i
+.PHONY : __/src/file_manage.cpp.i
+
+__/src/file_manage.s: __/src/file_manage.cpp.s
+.PHONY : __/src/file_manage.s
+
+# target to generate assembly for a file
+__/src/file_manage.cpp.s:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_disk.dir/build.make test/CMakeFiles/test_disk.dir/__/src/file_manage.cpp.s
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_io.dir/build.make test/CMakeFiles/test_block_io.dir/__/src/file_manage.cpp.s
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_block_manage.dir/build.make test/CMakeFiles/test_block_manage.dir/__/src/file_manage.cpp.s
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_file_manage.dir/build.make test/CMakeFiles/test_file_manage.dir/__/src/file_manage.cpp.s
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_applications.dir/build.make test/CMakeFiles/test_applications.dir/__/src/file_manage.cpp.s
+.PHONY : __/src/file_manage.cpp.s
+
 __/src/terminal_io.o: __/src/terminal_io.cpp.o
 .PHONY : __/src/terminal_io.o
 
@@ -472,6 +508,9 @@ help:
 	@echo "... __/src/disk.o"
 	@echo "... __/src/disk.i"
 	@echo "... __/src/disk.s"
+	@echo "... __/src/file_manage.o"
+	@echo "... __/src/file_manage.i"
+	@echo "... __/src/file_manage.s"
 	@echo "... __/src/terminal_io.o"
 	@echo "... __/src/terminal_io.i"
 	@echo "... __/src/terminal_io.s"

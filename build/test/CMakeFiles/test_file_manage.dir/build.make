@@ -125,10 +125,24 @@ test/CMakeFiles/test_file_manage.dir/__/src/block_manage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_file_manage.dir/__/src/block_manage.cpp.s"
 	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/block_manage.cpp -o CMakeFiles/test_file_manage.dir/__/src/block_manage.cpp.s
 
+test/CMakeFiles/test_file_manage.dir/__/src/file_manage.cpp.o: test/CMakeFiles/test_file_manage.dir/flags.make
+test/CMakeFiles/test_file_manage.dir/__/src/file_manage.cpp.o: ../src/file_manage.cpp
+test/CMakeFiles/test_file_manage.dir/__/src/file_manage.cpp.o: test/CMakeFiles/test_file_manage.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object test/CMakeFiles/test_file_manage.dir/__/src/file_manage.cpp.o"
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/test_file_manage.dir/__/src/file_manage.cpp.o -MF CMakeFiles/test_file_manage.dir/__/src/file_manage.cpp.o.d -o CMakeFiles/test_file_manage.dir/__/src/file_manage.cpp.o -c /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/file_manage.cpp
+
+test/CMakeFiles/test_file_manage.dir/__/src/file_manage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_file_manage.dir/__/src/file_manage.cpp.i"
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/file_manage.cpp > CMakeFiles/test_file_manage.dir/__/src/file_manage.cpp.i
+
+test/CMakeFiles/test_file_manage.dir/__/src/file_manage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_file_manage.dir/__/src/file_manage.cpp.s"
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/file_manage.cpp -o CMakeFiles/test_file_manage.dir/__/src/file_manage.cpp.s
+
 test/CMakeFiles/test_file_manage.dir/__/src/terminal_io.cpp.o: test/CMakeFiles/test_file_manage.dir/flags.make
 test/CMakeFiles/test_file_manage.dir/__/src/terminal_io.cpp.o: ../src/terminal_io.cpp
 test/CMakeFiles/test_file_manage.dir/__/src/terminal_io.cpp.o: test/CMakeFiles/test_file_manage.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object test/CMakeFiles/test_file_manage.dir/__/src/terminal_io.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object test/CMakeFiles/test_file_manage.dir/__/src/terminal_io.cpp.o"
 	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/test_file_manage.dir/__/src/terminal_io.cpp.o -MF CMakeFiles/test_file_manage.dir/__/src/terminal_io.cpp.o.d -o CMakeFiles/test_file_manage.dir/__/src/terminal_io.cpp.o -c /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/terminal_io.cpp
 
 test/CMakeFiles/test_file_manage.dir/__/src/terminal_io.cpp.i: cmake_force
@@ -145,6 +159,7 @@ test_file_manage_OBJECTS = \
 "CMakeFiles/test_file_manage.dir/__/src/disk.cpp.o" \
 "CMakeFiles/test_file_manage.dir/__/src/block_io.cpp.o" \
 "CMakeFiles/test_file_manage.dir/__/src/block_manage.cpp.o" \
+"CMakeFiles/test_file_manage.dir/__/src/file_manage.cpp.o" \
 "CMakeFiles/test_file_manage.dir/__/src/terminal_io.cpp.o"
 
 # External object files for target test_file_manage
@@ -154,6 +169,7 @@ test/test_file_manage: test/CMakeFiles/test_file_manage.dir/test_file_manage.cpp
 test/test_file_manage: test/CMakeFiles/test_file_manage.dir/__/src/disk.cpp.o
 test/test_file_manage: test/CMakeFiles/test_file_manage.dir/__/src/block_io.cpp.o
 test/test_file_manage: test/CMakeFiles/test_file_manage.dir/__/src/block_manage.cpp.o
+test/test_file_manage: test/CMakeFiles/test_file_manage.dir/__/src/file_manage.cpp.o
 test/test_file_manage: test/CMakeFiles/test_file_manage.dir/__/src/terminal_io.cpp.o
 test/test_file_manage: test/CMakeFiles/test_file_manage.dir/build.make
 test/test_file_manage: /usr/local/lib/libboost_filesystem.so.1.80.0
@@ -161,7 +177,7 @@ test/test_file_manage: /usr/local/lib/libboost_system.so.1.80.0
 test/test_file_manage: /usr/local/lib/libboost_unit_test_framework.so.1.80.0
 test/test_file_manage: /usr/local/lib/libboost_atomic.so.1.80.0
 test/test_file_manage: test/CMakeFiles/test_file_manage.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable test_file_manage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable test_file_manage"
 	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_file_manage.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

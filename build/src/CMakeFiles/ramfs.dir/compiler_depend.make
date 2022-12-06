@@ -2759,6 +2759,9 @@ src/CMakeFiles/ramfs.dir/disk.cpp.o: ../src/disk.cpp \
   ../include/disk.hpp \
   ../include/definations.hpp
 
+src/CMakeFiles/ramfs.dir/file_manage.cpp.o: ../src/file_manage.cpp \
+  /usr/include/stdc-predef.h
+
 src/CMakeFiles/ramfs.dir/ramfs.cpp.o: ../src/ramfs.cpp \
   /usr/include/stdc-predef.h \
   ../include/disk.hpp \
@@ -4596,6 +4599,8 @@ src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: ../src/terminal_io.cpp \
   /usr/local/include/boost/algorithm/string/erase.hpp \
   ../include/definations.hpp
 
+
+../src/file_manage.cpp:
 
 ../include/block_manage.hpp:
 

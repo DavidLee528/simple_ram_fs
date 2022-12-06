@@ -1025,4 +1025,7 @@ test/CMakeFiles/test_file_manage.dir/test_file_manage.cpp.o: \
  /usr/local/include/boost/algorithm/string/erase.hpp \
  /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/include/definations.hpp \
  /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/include/disk.hpp \
+ /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/include/block_io.hpp \
+ /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/include/file_manage.hpp \
+ /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/include/block_manage.hpp \
  /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/include/block_io.hpp

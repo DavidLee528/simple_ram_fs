@@ -14,9 +14,10 @@ void BlockManage::init() {
 
     // init DAT
     const size_t bound_dat { 2097152 }; // 2M (2097152) Items in DAT
-    ramfs::dat_item_t prototype_dat { "", 0, 0 }; 
+    ramfs::dat_item_t prototype_dat { -1, "", -1, 0 }; 
     ramfs::dat_item_t *curr_dat = reinterpret_cast<ramfs::dat_item_t *>(curr_fat); 
     for (size_t i = 0; i < bound_dat - 10; ++i) {
+        prototype_dat.idx = i; 
         *curr_dat = prototype_dat; 
         ++curr_dat; 
     }

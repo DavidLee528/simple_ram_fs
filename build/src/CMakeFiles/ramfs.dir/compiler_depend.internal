@@ -2762,6 +2762,10 @@ src/CMakeFiles/ramfs.dir/disk.cpp.o
  /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/include/disk.hpp
  /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/include/definations.hpp
 
+src/CMakeFiles/ramfs.dir/file_manage.cpp.o
+ /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/file_manage.cpp
+ /usr/include/stdc-predef.h
+
 src/CMakeFiles/ramfs.dir/ramfs.cpp.o
  /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/ramfs.cpp
  /usr/include/stdc-predef.h
