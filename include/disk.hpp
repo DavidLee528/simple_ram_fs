@@ -36,6 +36,12 @@ public:
     VDisk(); 
     ~VDisk(); 
 
+#ifndef NDEBUG
+public: 
+    VDisk(const std::string &debug_flag) { this->init_ramfs(); }
+    std::vector<std::shared_ptr<ramfs::byte_t>> get_disk_array() const { return this->disk_array; }
+#endif
+
 /**
  * @brief Getters for system basic information
  */
@@ -44,12 +50,12 @@ public:
     ramfs::disk_size_t get_disk_size() const { return this->disk_size; }
     ramfs::disk_size_t get_disk_amount() const { return this->disk_amount;   }
 
-public: 
+private: 
     void init_ramfs(); 
     std::tuple<ramfs::block_size_t, ramfs::disk_size_t, ramfs::disk_amount_t> get_config_from_file(const std::string &rpath); 
     void init_interactive_system(); 
 
-private: 
+protected: 
     ramfs::block_size_t block_size {0}; 
     ramfs::disk_size_t disk_size {0}; 
     ramfs::disk_amount_t disk_amount {0}; 

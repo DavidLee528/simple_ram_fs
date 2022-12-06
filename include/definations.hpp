@@ -1,6 +1,8 @@
 #ifndef _DEFINATIONS_HPP_
 #define _DEFINATIONS_HPP_ 1
 
+// #define NDEBUG
+
 namespace ramfs {
 
 /**
