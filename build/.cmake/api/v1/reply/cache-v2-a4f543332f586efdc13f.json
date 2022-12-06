@@ -39,11 +39,11 @@
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "Choose the type of build, options are: None Debug Release RelWithDebInfo MinSizeRel ..."
 				}
 			],
 			"type" : "STRING",
-			"value" : "Debug"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_CACHEFILE_DIR",
@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build"
+			"value" : "/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -92,6 +92,22 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "3"
+		},
+		{
+			"name" : "CMAKE_COLOR_MAKEFILE",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Enable/Disable color output during build."
+				}
+			],
+			"type" : "BOOL",
+			"value" : "ON"
 		},
 		{
 			"name" : "CMAKE_COMMAND",
@@ -142,8 +158,8 @@
 					"value" : "CXX compiler"
 				}
 			],
-			"type" : "STRING",
-			"value" : "/usr/local/bin/g++"
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/c++"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -159,7 +175,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/local/bin/gcc-ar"
+			"value" : "/usr/bin/gcc-ar"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -175,7 +191,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/local/bin/gcc-ranlib"
+			"value" : "/usr/bin/gcc-ranlib"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -270,8 +286,8 @@
 					"value" : "C compiler"
 				}
 			],
-			"type" : "STRING",
-			"value" : "/usr/local/bin/gcc"
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/cc"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -287,7 +303,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/local/bin/gcc-ar"
+			"value" : "/usr/bin/gcc-ar"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -303,7 +319,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/local/bin/gcc-ranlib"
+			"value" : "/usr/bin/gcc-ranlib"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -498,12 +514,16 @@
 			"properties" : 
 			[
 				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "Enable/Disable output of compile commands during generation."
 				}
 			],
 			"type" : "BOOL",
-			"value" : "TRUE"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_EXTRA_GENERATOR",
@@ -527,7 +547,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "Ninja"
+			"value" : "Unix Makefiles"
 		},
 		{
 			"name" : "CMAKE_GENERATOR_INSTANCE",
@@ -575,7 +595,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs"
+			"value" : "/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -627,11 +647,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Program used to build from build.ninja files."
+					"value" : "Path to a program."
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/ninja"
+			"value" : "/usr/bin/make"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -819,7 +839,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "ranfs"
+			"value" : "ramfs"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1102,7 +1122,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "ranfs_BINARY_DIR",
+			"name" : "ramfs_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1111,10 +1131,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build"
+			"value" : "/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build"
 		},
 		{
-			"name" : "ranfs_IS_TOP_LEVEL",
+			"name" : "ramfs_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1126,7 +1146,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "ranfs_SOURCE_DIR",
+			"name" : "ramfs_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1135,7 +1155,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs"
+			"value" : "/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs"
 		}
 	],
 	"kind" : "cache",

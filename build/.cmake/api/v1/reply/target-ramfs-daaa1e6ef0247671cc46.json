@@ -60,9 +60,6 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
-				},
-				{
 					"backtrace" : 3,
 					"fragment" : "-g"
 				}
@@ -71,14 +68,15 @@
 			[
 				{
 					"backtrace" : 5,
-					"path" : "/home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/include"
+					"path" : "/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/include"
 				}
 			],
 			"language" : "CXX",
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2
 			]
 		}
 	],
@@ -87,10 +85,6 @@
 	{
 		"commandFragments" : 
 		[
-			{
-				"fragment" : "-g",
-				"role" : "flags"
-			},
 			{
 				"fragment" : "",
 				"role" : "flags"
@@ -125,7 +119,8 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2
 			]
 		}
 	],
@@ -135,6 +130,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/ramfs.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/disk.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

@@ -28,7 +28,7 @@ void print_undefined_command(const std::string &rhs) {
     fmt::print(fg(fmt::color::red), "{}\n", rhs); 
 }
 
-void print_system_basic_information(const Ramfs &rhs) {
+void print_system_basic_information(const VDisk &rhs) {
     fmt::print("- Block size:\t{} Bytes\n", rhs.get_block_size()); 
     fmt::print("- Disk size:\t{} Bytes\n", rhs.get_disk_size()); 
     fmt::print("- Disk amount:\t{}\n", rhs.get_disk_amount()); 

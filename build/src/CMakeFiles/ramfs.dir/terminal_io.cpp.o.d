@@ -1,7 +1,7 @@
 src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: \
- /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/src/terminal_io.cpp \
+ /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/terminal_io.cpp \
  /usr/include/stdc-predef.h \
- /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/include/terminal_io.hpp \
+ /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/include/terminal_io.hpp \
  /usr/local/include/c++/11.2.0/string \
  /usr/local/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/local/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -200,7 +200,7 @@ src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: \
  /usr/local/include/c++/11.2.0/bits/locale_classes.h \
  /usr/local/include/c++/11.2.0/bits/locale_classes.tcc \
  /usr/local/include/c++/11.2.0/bits/streambuf.tcc \
- /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/include/ramfs.hpp \
+ /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/include/disk.hpp \
  /usr/local/include/c++/11.2.0/iostream \
  /usr/local/include/c++/11.2.0/ostream /usr/local/include/c++/11.2.0/ios \
  /usr/local/include/c++/11.2.0/bits/basic_ios.h \
@@ -880,4 +880,5 @@ src/CMakeFiles/ramfs.dir/terminal_io.cpp.o: \
  /usr/local/include/boost/algorithm/string/detail/find_format_all.hpp \
  /usr/local/include/boost/algorithm/string/formatter.hpp \
  /usr/local/include/boost/algorithm/string/detail/formatter.hpp \
- /usr/local/include/boost/algorithm/string/erase.hpp
+ /usr/local/include/boost/algorithm/string/erase.hpp \
+ /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/include/definations.hpp

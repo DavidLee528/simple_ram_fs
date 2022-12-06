@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/ramfs.dir/disk.cpp.o"
+  "CMakeFiles/ramfs.dir/disk.cpp.o.d"
   "CMakeFiles/ramfs.dir/ramfs.cpp.o"
   "CMakeFiles/ramfs.dir/ramfs.cpp.o.d"
   "CMakeFiles/ramfs.dir/terminal_io.cpp.o"

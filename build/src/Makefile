@@ -57,10 +57,10 @@ RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs
+CMAKE_SOURCE_DIR = /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build
+CMAKE_BINARY_DIR = /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build/CMakeFiles /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build/src//CMakeFiles/progress.marks
-	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build/CMakeFiles 0
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/src//CMakeFiles/progress.marks
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/ramfs.dir/rule:
-	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/ramfs.dir/rule
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/ramfs.dir/rule
 .PHONY : src/CMakeFiles/ramfs.dir/rule
 
 # Convenience name for target.
@@ -127,15 +127,39 @@ ramfs: src/CMakeFiles/ramfs.dir/rule
 
 # fast build rule for target.
 ramfs/fast:
-	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ramfs.dir/build.make src/CMakeFiles/ramfs.dir/build
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ramfs.dir/build.make src/CMakeFiles/ramfs.dir/build
 .PHONY : ramfs/fast
+
+disk.o: disk.cpp.o
+.PHONY : disk.o
+
+# target to build an object file
+disk.cpp.o:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ramfs.dir/build.make src/CMakeFiles/ramfs.dir/disk.cpp.o
+.PHONY : disk.cpp.o
+
+disk.i: disk.cpp.i
+.PHONY : disk.i
+
+# target to preprocess a source file
+disk.cpp.i:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ramfs.dir/build.make src/CMakeFiles/ramfs.dir/disk.cpp.i
+.PHONY : disk.cpp.i
+
+disk.s: disk.cpp.s
+.PHONY : disk.s
+
+# target to generate assembly for a file
+disk.cpp.s:
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ramfs.dir/build.make src/CMakeFiles/ramfs.dir/disk.cpp.s
+.PHONY : disk.cpp.s
 
 ramfs.o: ramfs.cpp.o
 .PHONY : ramfs.o
 
 # target to build an object file
 ramfs.cpp.o:
-	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ramfs.dir/build.make src/CMakeFiles/ramfs.dir/ramfs.cpp.o
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ramfs.dir/build.make src/CMakeFiles/ramfs.dir/ramfs.cpp.o
 .PHONY : ramfs.cpp.o
 
 ramfs.i: ramfs.cpp.i
@@ -143,7 +167,7 @@ ramfs.i: ramfs.cpp.i
 
 # target to preprocess a source file
 ramfs.cpp.i:
-	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ramfs.dir/build.make src/CMakeFiles/ramfs.dir/ramfs.cpp.i
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ramfs.dir/build.make src/CMakeFiles/ramfs.dir/ramfs.cpp.i
 .PHONY : ramfs.cpp.i
 
 ramfs.s: ramfs.cpp.s
@@ -151,7 +175,7 @@ ramfs.s: ramfs.cpp.s
 
 # target to generate assembly for a file
 ramfs.cpp.s:
-	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ramfs.dir/build.make src/CMakeFiles/ramfs.dir/ramfs.cpp.s
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ramfs.dir/build.make src/CMakeFiles/ramfs.dir/ramfs.cpp.s
 .PHONY : ramfs.cpp.s
 
 terminal_io.o: terminal_io.cpp.o
@@ -159,7 +183,7 @@ terminal_io.o: terminal_io.cpp.o
 
 # target to build an object file
 terminal_io.cpp.o:
-	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ramfs.dir/build.make src/CMakeFiles/ramfs.dir/terminal_io.cpp.o
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ramfs.dir/build.make src/CMakeFiles/ramfs.dir/terminal_io.cpp.o
 .PHONY : terminal_io.cpp.o
 
 terminal_io.i: terminal_io.cpp.i
@@ -167,7 +191,7 @@ terminal_io.i: terminal_io.cpp.i
 
 # target to preprocess a source file
 terminal_io.cpp.i:
-	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ramfs.dir/build.make src/CMakeFiles/ramfs.dir/terminal_io.cpp.i
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ramfs.dir/build.make src/CMakeFiles/ramfs.dir/terminal_io.cpp.i
 .PHONY : terminal_io.cpp.i
 
 terminal_io.s: terminal_io.cpp.s
@@ -175,7 +199,7 @@ terminal_io.s: terminal_io.cpp.s
 
 # target to generate assembly for a file
 terminal_io.cpp.s:
-	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ramfs.dir/build.make src/CMakeFiles/ramfs.dir/terminal_io.cpp.s
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ramfs.dir/build.make src/CMakeFiles/ramfs.dir/terminal_io.cpp.s
 .PHONY : terminal_io.cpp.s
 
 # Help Target
@@ -187,6 +211,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ramfs"
+	@echo "... disk.o"
+	@echo "... disk.i"
+	@echo "... disk.s"
 	@echo "... ramfs.o"
 	@echo "... ramfs.i"
 	@echo "... ramfs.s"
@@ -204,6 +231,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

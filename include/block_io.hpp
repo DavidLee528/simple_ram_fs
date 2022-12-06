@@ -27,7 +27,7 @@ public:
      * @param buf Data buffer to be filled with content of block
      * @return int -1 for error, 0 otherwise
      */
-    static inline int bread(size_t block, void *buf); 
+    inline int bread(size_t block, void *buf); 
 
     /**
      * @brief Write a block to disk
@@ -36,7 +36,7 @@ public:
      * @param buf Data buffer to write in the block
      * @return int -1 for error, 0 otherwise
      */
-    static inline int bwrite(size_t block, const void *buf); 
+    inline int bwrite(size_t block, const void *buf); 
 
 }; 
 

@@ -57,10 +57,10 @@ RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs
+CMAKE_SOURCE_DIR = /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build
+CMAKE_BINARY_DIR = /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build/CMakeFiles /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build/test//CMakeFiles/progress.marks
-	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build/CMakeFiles 0
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/test//CMakeFiles/progress.marks
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/clean
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,17 +103,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -135,6 +135,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/ramfs/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

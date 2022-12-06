@@ -1,5 +1,5 @@
-src/CMakeFiles/ramfs.dir/ramfs.cpp.o: \
- /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/ramfs.cpp \
+src/CMakeFiles/ramfs.dir/disk.cpp.o: \
+ /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/src/disk.cpp \
  /usr/include/stdc-predef.h \
  /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/include/disk.hpp \
  /usr/local/include/c++/11.2.0/iostream \
