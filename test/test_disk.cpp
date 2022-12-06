@@ -6,6 +6,8 @@
 #include "disk.hpp"
 #include "block_io.hpp"
 
+#include <algorithm>
+
 /**
  * @brief Construct a new boost auto test case object
  *        ALL TEST DATA SHOULD BE CONSISTENT WITH |ramfs.conf|
@@ -33,12 +35,19 @@ BOOST_AUTO_TEST_CASE(PassTest) {
          */
         BOOST_CHECK_EQUAL(disk.get_disk_amount(), 1); 
 
-
         /**
          * @brief check the member variable disk_array
          */
         BOOST_CHECK_EQUAL(disk.get_disk_array().size(), disk.get_disk_amount()); 
 
+        /**
+         * @brief check memset for each virtual disk
+         */
+        const ramfs::byte_t byte_zero {static_cast<ramfs::byte_t>(0)}; 
+        for (ramfs::disk_amount_t i = 0; i < disk.get_disk_amount(); ++i) {
+            BOOST_CHECK_EQUAL(*(disk.get_disk_array().at(i).get() + 0), byte_zero); 
+            BOOST_CHECK_EQUAL(*(disk.get_disk_array().at(i).get() + disk.get_disk_size() - 1), byte_zero); 
+        }
     } catch(const std::exception& e) {
         std::cerr << e.what() << '\n';
     }

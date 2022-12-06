@@ -13,11 +13,15 @@
 #define _BLOCK_IO_HPP_ 1
 
 #include <iostream>
+#include <exception>
 
 #include "disk.hpp"
 #include "definations.hpp"
 
 class BlockIO: public VDisk {
+
+public: 
+    using VDisk::VDisk; 
 
 public:
 
@@ -29,7 +33,8 @@ public:
      * @param disk The number of disk
      * @return int -1 for error, 0 otherwise
      */
-    inline ramfs::block_t bread(ramfs::block_size_t block, ramfs::disk_amount_t disk = 0); 
+    // std::shared_ptr<ramfs::byte_t> bread(size_t block, ramfs::disk_amount_t disk = 0); 
+    ramfs::byte_t *bread(size_t block, ramfs::disk_amount_t disk = 0); 
 
     /**
      * @brief Write a block to disk
@@ -39,7 +44,7 @@ public:
      * @param disk The number of disk
      * @return int -1 for error, 0 otherwise
      */
-    inline int bwrite(ramfs::block_size_t block, const void *buf, ramfs::disk_amount_t disk = 0); 
+    inline int bwrite(size_t block, const void *buf, ramfs::disk_amount_t disk); 
 
 }; 
 

@@ -26,7 +26,6 @@ void VDisk::init_ramfs() {
 
     // allocate memory space for every disk
     for (ramfs::disk_amount_t i = 0; i < this->disk_amount; ++i) {
-        // std::shared_ptr<ramfs::byte_t> new_disk = std::make_shared<ramfs::byte_t>(ptr); 
         std::shared_ptr<ramfs::byte_t> new_disk {new ramfs::byte_t[this->disk_size]}; 
         memset(new_disk.get(), 0, this->disk_size); 
         this->disk_array.push_back(new_disk); 
