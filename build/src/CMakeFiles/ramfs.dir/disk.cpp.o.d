@@ -199,6 +199,18 @@ src/CMakeFiles/ramfs.dir/disk.cpp.o: \
  /usr/local/include/c++/11.2.0/bits/refwrap.h \
  /usr/local/include/c++/11.2.0/bits/fs_dir.h \
  /usr/local/include/c++/11.2.0/bits/fs_ops.h \
+ /usr/local/include/c++/11.2.0/memory \
+ /usr/local/include/c++/11.2.0/bits/stl_uninitialized.h \
+ /usr/local/include/c++/11.2.0/bits/stl_tempbuf.h \
+ /usr/local/include/c++/11.2.0/bits/stl_raw_storage_iter.h \
+ /usr/local/include/c++/11.2.0/bits/align.h \
+ /usr/local/include/c++/11.2.0/bit \
+ /usr/local/include/c++/11.2.0/bits/shared_ptr_atomic.h \
+ /usr/local/include/c++/11.2.0/bits/atomic_base.h \
+ /usr/local/include/c++/11.2.0/bits/atomic_lockfree_defines.h \
+ /usr/local/include/c++/11.2.0/backward/auto_ptr.h \
+ /usr/local/include/c++/11.2.0/pstl/glue_memory_defs.h \
+ /usr/local/include/c++/11.2.0/pstl/execution_defs.h \
  /usr/local/include/c++/11.2.0/fstream \
  /usr/local/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/basic_file.h \
  /usr/local/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/c++io.h \
@@ -207,7 +219,6 @@ src/CMakeFiles/ramfs.dir/disk.cpp.o: \
  /usr/local/include/c++/11.2.0/bits/stl_algo.h \
  /usr/local/include/c++/11.2.0/bits/algorithmfwd.h \
  /usr/local/include/c++/11.2.0/bits/stl_heap.h \
- /usr/local/include/c++/11.2.0/bits/stl_tempbuf.h \
  /usr/local/include/c++/11.2.0/bits/uniform_int_dist.h \
  /usr/local/include/c++/11.2.0/pstl/glue_algorithm_defs.h \
  /usr/local/include/c++/11.2.0/functional \
@@ -217,11 +228,9 @@ src/CMakeFiles/ramfs.dir/disk.cpp.o: \
  /usr/local/include/c++/11.2.0/bits/hashtable_policy.h \
  /usr/local/include/c++/11.2.0/bits/unordered_map.h \
  /usr/local/include/c++/11.2.0/vector \
- /usr/local/include/c++/11.2.0/bits/stl_uninitialized.h \
  /usr/local/include/c++/11.2.0/bits/stl_vector.h \
  /usr/local/include/c++/11.2.0/bits/stl_bvector.h \
  /usr/local/include/c++/11.2.0/bits/vector.tcc \
- /usr/local/include/c++/11.2.0/pstl/execution_defs.h \
  /usr/local/include/c++/11.2.0/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -248,17 +257,9 @@ src/CMakeFiles/ramfs.dir/disk.cpp.o: \
  /usr/local/include/c++/11.2.0/cstring /usr/include/string.h \
  /usr/include/strings.h /usr/local/include/c++/11.2.0/iterator \
  /usr/local/include/c++/11.2.0/bits/stream_iterator.h \
- /usr/local/include/fmt/format.h /usr/local/include/c++/11.2.0/memory \
- /usr/local/include/c++/11.2.0/bits/stl_raw_storage_iter.h \
- /usr/local/include/c++/11.2.0/bits/align.h \
- /usr/local/include/c++/11.2.0/bit \
- /usr/local/include/c++/11.2.0/bits/shared_ptr_atomic.h \
- /usr/local/include/c++/11.2.0/bits/atomic_base.h \
- /usr/local/include/c++/11.2.0/bits/atomic_lockfree_defines.h \
- /usr/local/include/c++/11.2.0/backward/auto_ptr.h \
- /usr/local/include/c++/11.2.0/pstl/glue_memory_defs.h \
- /usr/local/include/fmt/core.h /usr/local/include/c++/11.2.0/cstddef \
- /usr/local/include/fmt/color.h /usr/local/include/boost/stacktrace.hpp \
+ /usr/local/include/fmt/format.h /usr/local/include/fmt/core.h \
+ /usr/local/include/c++/11.2.0/cstddef /usr/local/include/fmt/color.h \
+ /usr/local/include/boost/stacktrace.hpp \
  /usr/local/include/boost/config.hpp \
  /usr/local/include/boost/config/user.hpp \
  /usr/local/include/boost/config/detail/select_compiler_config.hpp \
@@ -881,4 +882,5 @@ src/CMakeFiles/ramfs.dir/disk.cpp.o: \
  /usr/local/include/boost/algorithm/string/erase.hpp \
  /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/include/definations.hpp \
  /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/include/terminal_io.hpp \
- /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/include/disk.hpp
+ /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/include/disk.hpp \
+ /home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/include/definations.hpp

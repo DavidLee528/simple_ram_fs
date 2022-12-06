@@ -15,6 +15,7 @@
 #include <iostream>
 #include <map>
 #include <filesystem>
+#include <memory>
 #include <fstream>
 #include <tuple>
 #include <array>
@@ -39,17 +40,17 @@ public:
  * @brief Getters for system basic information
  */
 public: 
-    block_size_t get_block_size() const { return this->block_size; }
-    disk_size_t get_disk_size() const { return this->disk_array.at(0)->size(); }
-    disk_size_t get_disk_amount() const { return this->disk_array.size();  }
+    ramfs::block_size_t get_block_size() const { return this->block_size; }
+    ramfs::disk_size_t get_disk_size() const { return this->disk_array.at(0)->size(); }
+    ramfs::disk_size_t get_disk_amount() const { return this->disk_array.size();  }
 
 public: 
     void init_ramfs(); 
-    std::tuple<block_size_t, disk_size_t, disk_amount_t> get_config_from_file(const std::string &rpath); 
+    std::tuple<ramfs::block_size_t, ramfs::disk_size_t, ramfs::disk_amount_t> get_config_from_file(const std::string &rpath); 
     void init_interactive_system(); 
 
 private: 
-    block_size_t block_size {0}; 
+    ramfs::block_size_t block_size {0}; 
     std::vector<std::vector<char>*> disk_array {}; 
 
 }; 
