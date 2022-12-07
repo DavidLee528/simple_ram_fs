@@ -77,17 +77,24 @@ void BlockManage::make_dir(const std::string &dirname, const std::string &path) 
     ); 
 }
 
-void BlockManage::log_file(const std::string &filename, const std::string &path) {
+void BlockManage::remove_dir(const std::string &dirname, const std::string &path) {
+    this->pt.erase(path); 
+}
+
+int BlockManage::log_file(const std::string &filename, const std::string &path, size_t block_amount) {
     // Allocate disk for new file
     int bd = this->balloc(2); 
 
     // log filename -> block descriptor
     this->filename_to_bd.insert(std::make_pair(filename, bd)); 
+    this->bd_to_filename.insert(std::make_pair(bd, filename)); 
 
     // Add file
     this->pt.get_child(
         boost::property_tree::basic_ptree<std::string, std::vector<int>>::path_type{path, '/'}
     ).data().push_back(bd); 
+
+    return bd; 
 }
 
 void BlockManage::unlog_file(const std::string &filename, const std::string &path) {
@@ -97,5 +104,6 @@ void BlockManage::unlog_file(const std::string &filename, const std::string &pat
 
     std::remove_if(data.begin(), data.end(), [this, filename](int val) { return val == this->filename_to_bd[filename]; }); 
 
+    this->bd_to_filename.erase(this->filename_to_bd[filename]); 
     this->filename_to_bd.erase(filename); 
 }

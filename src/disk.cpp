@@ -4,7 +4,6 @@
 
 VDisk::VDisk() {
     this->init_ramfs(); 
-    this->init_interactive_system(); 
 }
 
 VDisk::~VDisk() {
@@ -58,26 +57,3 @@ std::tuple<ramfs::block_size_t, ramfs::disk_size_t, ramfs::disk_amount_t> VDisk:
     return std::make_tuple(block_size, disk_size, disk_amount); 
 }
 
-void VDisk::init_interactive_system() {
-    print_welcome(); 
-
-    std::string curr_username {}; 
-    std::string curr_path {}; 
-
-    // to delete
-    curr_username = "david"; 
-    curr_path = "~/dev/code/src"; 
-
-    while (true) {
-        print_interaction_text(curr_username, curr_path); 
-
-        std::string op {}; 
-        std::getline(std::cin, op); 
-
-        if (op == "") continue; 
-        else if (op == "help") print_help(); 
-        else if (op == "sbi") print_system_basic_information(*this); 
-        else if (op == "pwd") print_current_work_directory(curr_path); 
-        else print_undefined_command(op); 
-    }
-}

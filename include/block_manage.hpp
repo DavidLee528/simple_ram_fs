@@ -41,13 +41,16 @@ public:
      */
     void make_dir(const std::string &dirname, const std::string &path); 
 
+    // not test
+    void remove_dir(const std::string &dirname, const std::string &path); 
+
     /**
      * @brief log new file to directory tree
      * 
      * @param filename 
      * @param path the path must exists (e.g. $/wgssb)
      */
-    void log_file(const std::string &filename, const std::string &path); 
+    int log_file(const std::string &filename, const std::string &path, size_t block_amount = 2); 
 
     /**
      * @brief unlog_file
@@ -59,7 +62,7 @@ public:
 
     void dump(); 
 
-private: 
+public: 
 
     /**
      * @brief directory
@@ -69,6 +72,7 @@ private:
 
 
     std::map<std::string, int> filename_to_bd { }; 
+    std::map<int, std::string> bd_to_filename { }; 
 }; 
 
 #endif /* _BLOCK_MANAGE_HPP_ */

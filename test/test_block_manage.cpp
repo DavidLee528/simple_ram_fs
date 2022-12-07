@@ -46,6 +46,7 @@ BOOST_AUTO_TEST_CASE(PassTest) {
         disk->bfree(bd1); 
 
         disk->make_dir("wgssb", "$"); 
+        disk->remove_dir("any", "$/wgssb"); 
         disk->log_file("wgssb.yes", "$/wgssb"); 
         disk->unlog_file("wgssb.yes", "$/wgssb"); 
 

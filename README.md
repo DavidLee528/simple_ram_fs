@@ -12,6 +12,7 @@ This is a simple in memory file system simulator.
   -  An open-source formatting library providing a fast and safe alternative to C stdio and C++ iostreams.
 - [Boost](https://www.boost.org/)
   - Boost provides free peer-reviewed portable C++ source libraries.
+- [tabulate]()
 
 ## 0x02 Project Structure
 

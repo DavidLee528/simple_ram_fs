@@ -1,0 +1,137 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src",
+					"jsonFile" : "directory-src-Debug-b6cf2213fc5053b67c22.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "test",
+					"jsonFile" : "directory-test-Debug-451c0598f41488bb20b9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "test",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "ramfs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "ramfs::@145eef247bfb46b6828c",
+					"jsonFile" : "target-ramfs-Debug-2908f4a81d66cb9ce056.json",
+					"name" : "ramfs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "test_applications::@36f028580bb02cc8272a",
+					"jsonFile" : "target-test_applications-Debug-aaddb84aa33f7457f535.json",
+					"name" : "test_applications",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "test_block_io::@36f028580bb02cc8272a",
+					"jsonFile" : "target-test_block_io-Debug-60ec04c7cc5c66d5dc3b.json",
+					"name" : "test_block_io",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "test_block_manage::@36f028580bb02cc8272a",
+					"jsonFile" : "target-test_block_manage-Debug-8adebea3449c38f84688.json",
+					"name" : "test_block_manage",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "test_disk::@36f028580bb02cc8272a",
+					"jsonFile" : "target-test_disk-Debug-2604c87f656ec1e99396.json",
+					"name" : "test_disk",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "test_file_manage::@36f028580bb02cc8272a",
+					"jsonFile" : "target-test_file_manage-Debug-3b8879e3c1154a5eb8df.json",
+					"name" : "test_file_manage",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs/build_vscode",
+		"source" : "/home/david/study/course/22-23-1/os/exp/exp3_file-system/simple_ram_fs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

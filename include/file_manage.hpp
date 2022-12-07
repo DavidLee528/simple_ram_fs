@@ -5,6 +5,7 @@
 #include "definations.hpp"
 
 #include <string>
+#include <map>
 
 class FileManage: public BlockManage {
 public: 
@@ -16,18 +17,16 @@ public:
         // default value is 2
         size_t block_amount { ramfs::file_init_size / this->block_size }; 
 
-        // get block descriptor
-        int bd { this->balloc(block_amount) }; 
-
-
         // add to directory
+        // get block descriptor
+        int bd { this->log_file(name, path, block_amount) }; 
 
-
+        // return block descriptor
         return bd; 
     }
 
     int remove_file(const std::string &name, const std::string &path) {
-
+        this->unlog_file(name, path); 
     }
 
     int modify_file(const std::string &name, const std::string &path, const std::string &content) {
@@ -38,7 +37,43 @@ public:
 
     }
 
+    std::string indent(int level) {
+        std::string s; 
+        for (int i = 0; i < level; ++i) s += "  ";
+        return s; 
+    } 
 
+    void printTree(boost::property_tree::basic_ptree<std::string, std::vector<int>> &pt, int level) {
+        if (pt.empty()) {
+            // std::cerr << "\"" << pt.data() << "\"";
+            for (const auto & elem : pt.data()) std::cerr << "\"" << this->bd_to_filename[elem] << "\""; 
+        } else {
+            if (level) std::cerr << std::endl; 
+
+            std::cerr << indent(level) << "{" << std::endl;         
+
+            for (boost::property_tree::basic_ptree<std::string, std::vector<int>>::iterator pos = pt.begin(); pos != pt.end();) {
+            std::cerr << indent(level + 1) << "\"" << pos->first << "\": "; 
+
+            printTree(pos->second, level + 1); 
+            ++pos; 
+            if (pos != pt.end()) {
+                std::cerr << ","; 
+            }
+            std::cerr << std::endl;
+        } 
+
+        std::cerr << indent(level) << " }";     
+        }
+
+    return; 
+    }
+
+
+// private: 
+    // std::vector<std::pair<std::string, std::string>> data { };  // <filename, <idx, content>>
+    std::map<std::string, std::pair<int, std::string>> data { }; 
+    int curr_idx { }; 
 }; 
 
 #endif /* _BLOCK_MANAGE_HPP_ */
