@@ -1,6 +1,6 @@
 # NCUT OS Lab 3: File System
 
-## 0x00 Overall 
+## 0x00 Introduction 
 
 This is a simple in memory file system simulator. 
 
@@ -14,9 +14,7 @@ This is a simple in memory file system simulator.
   - Boost provides free peer-reviewed portable C++ source libraries.
 - [tabulate]()
 
-## 0x02 Project Structure
-
-## 0x03 Design Architecture
+## 0x02 Design Architecture
 
 - There are following concepts for the ram disk
   - block
@@ -44,13 +42,13 @@ This is a simple in memory file system simulator.
       - virtual_disk_open()
       - virtual_disk_close()
 
-## 0x04 Usage
+## 0x03 Usage
 
 1. Compile
 2. Edit configuration file
 3. Run simulator
 
-## 0xFD Original Statement
+## 0x04 Original Statement
 
 I sincerely promise that: 
 
@@ -59,13 +57,13 @@ I sincerely promise that:
 - Where i referenced other program of documents in my programs, i have clearly indicated the source of reference. 
 - I have never written this program with the intention of disrupting or impeding the proper functioning of other computer system. 
 
-## 0xFE Reference
+## 0x05 Reference
 
 - https://fmt.dev/latest/api.html
 
-## 0xFF About Author
+## 006F About Author
 
-- Tianhao Lee
+- Tianhao Li
 - Information Security 20-2
-- 20101110201
-- 13121515269@163.com
+- litianhao.life
+- davidlee0x01@proton.me
